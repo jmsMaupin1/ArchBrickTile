@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import About from './views/About';
 import Contact from './views/Contact';
 import Home from './views/Home';
-import ProductGallery from './views/ProductGallery';
+import Suppliers from './views/Suppliers';
 import App from './views/App';
 import './index.css';
 
@@ -15,7 +15,7 @@ ReactDOM.render(
   			<IndexRoute component={Home} />
   			<Route path="contact" component={Contact} />
   			<Route path="about" component={About} />
-  			<Route path="product" component={ProductGallery} />
+  			<Route path="suppliers" component={Suppliers} />
   		</Route>
   	</Router>,
   document.getElementById('root')
