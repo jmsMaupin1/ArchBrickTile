@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router';
+import './home.css';
 export default class Home extends Component {
+	constructor(props){
+		super(props);
+	}
 	render() {
 		return (
-			<div>
-				<Link to="/about">about</Link>
-				<Link to="/contact">contact</Link>
-				<Link to="/product">product</Link>
+			<div className="home">
 			</div>
 		);
 	}
