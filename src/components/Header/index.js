@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import { Navbar } from 'react-bootstrap';
 import './sticky-header.css'
 
 export default class Header extends Component {
