@@ -29,7 +29,7 @@ export default class App extends Component {
 		return (
 	    	<div className="App">
 		        {/*TODO: add Header and footer*/}
-		        <Header isSticky={this.state.scrollTop > 98}/>
+		        <Header isSticky={this.state.scrollTop > 80}/>
 		        {React.cloneElement(this.props.children, {...this.props})}
 	      	</div>
 	  	);
