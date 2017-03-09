@@ -3,6 +3,7 @@ import {Link} from 'react-router';
 import Carousel from '../../components/Carousel';
 import GalleryHeader from '../../components/ProductGalleryHeader';
 import GallerySquare from '../../components/GallerySquare';
+import ServiceSquare from '../../components/ServiceSquare';
 
 
 import BrickProduct from '../../assets/brick-product.jpg';
@@ -71,6 +72,8 @@ export default class Home extends Component {
                     title="Check out our Masonry Accents"
                     subtext="All the Accents"
             />
+
+            <ServiceSquare />
 
             </div>
 		);
