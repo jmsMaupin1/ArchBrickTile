@@ -27,8 +27,9 @@
 }
 
 .overlay .overlay-content {
-  display: table;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 25%;
   width: 100%;
 }
 
