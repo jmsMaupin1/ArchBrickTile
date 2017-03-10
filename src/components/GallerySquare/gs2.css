@@ -1,0 +1,77 @@
+.square {
+	float: left;
+	position: relative;
+	width: 25%;
+	padding-bottom: 25%;
+	background: black;
+	overflow: hidden;
+}
+.square-content {
+	text-align: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	width: 100%;
+}
+
+.folio-overview .gs2-expand {
+	margin-top: -500px;
+  	margin-left: -500px;
+}
+
+.gs2-lightbox:hover .gs2-lightbox-image {
+	transform: scale(1.5) rotate(-15deg);
+}
+
+.gs2-lightbox:hover .gs2-expand {
+	margin-top: 0;
+  	margin-left:0;
+}
+
+.gs2-lightbox:hover .gs2-overlay {
+	opacity: 1;
+}
+
+.gs2-lightbox-image {
+	transition: all 0.8s ease-in-out;
+}
+
+.gs2-overview a {
+  font-size: 18px;
+  color: #333;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.gs2-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	color: white;
+	background: rgba(1,1,1,.5);
+	-webkit-transition: all 0.5s ease-in-out;
+  	transition: all 0.5s ease-in-out;
+}
+
+.folio-overview .gs2-expand {
+	transition: all 0.8s ease-in-out;
+}
