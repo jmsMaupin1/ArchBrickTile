@@ -12,10 +12,20 @@
 .sticky-header > a {
 	color: black;
 	text-align: center;
-	font-size: 2em;
 	line-height: 105px;
 	height: 100%;
 	width: 25%;
+}
+
+@media only screen  and (min-width : 1224px) {
+	.sticky-header > a {
+		color: black;
+		text-align: center;
+		font-size: 2em;
+		line-height: 105px;
+		height: 100%;
+		width: 25%;
+	}
 }
 
 .sticky {
