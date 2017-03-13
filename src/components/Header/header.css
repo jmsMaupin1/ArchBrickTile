@@ -1,0 +1,111 @@
+.navigation {
+	position: fixed;
+	width: 100%;
+}
+
+.navigation-content > a {
+	transition: all .5s;
+}
+
+.nav-button {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	float: right;
+	border: 1px solid black;
+	border-radius: 20%;
+	background: none;
+	color: white;
+	font-size: 2em;
+	margin-top: 15px;
+	height: 50px;
+	width: 50px;
+	line-height: 58px;
+}
+/*Non-Desktops*/
+@media only screen and (max-width: 1223px) {
+	.revealed {
+		line-height: 2px;
+		padding: 40px;
+		height: 25px;
+	}
+
+	.concealed{
+		color: rgba(0,0,0,0);
+		height: 00px;
+	}
+
+	.navigation-content {
+		width: 100%;
+		background: black;
+	}
+
+	.navigation-content > a{
+		display: block;
+		padding-left: 20px;
+	}
+
+	.navigation-content > a,
+	.navigation-content > a:visited,
+	.navigation-content > a:hover{
+		color: white;
+		text-decoration: none;
+	}
+
+	.navigation {
+		height: 80px;
+		background: black;
+	}
+
+	.logo {
+		font-size: 20px;
+		line-height: 80px;
+		margin-left: 20px;
+	}
+}
+/*Desktop*/
+@media only screen  and (min-width : 1224px) {
+
+	.navigation a {
+		display: inline-block;
+		text-align: center;
+		height: 100%;
+		width: 25%;
+	}
+
+	.navigation-content {
+		width: 40%;
+		float: right;
+	}
+
+	.expanded {
+		background-size: rgba(1,1,1,1);
+		height: 80px;
+		transition: all .5s;
+	}
+
+	.expanded a {
+		color: black;
+		line-height: 81px;
+		transition: all .5s;
+	}
+
+	.contracted {
+		background: rgba(0,0,0,.9);
+		height: 40px;
+		transition: all .5s;
+	}
+
+	.contracted a {
+		color: white;
+		line-height: 40px;
+		transition: all .5s;
+	}
+
+	.nav-button {
+		display: none;
+	}
+}
