@@ -18,7 +18,7 @@ export default class carousel extends Component {
             })  
           }
         </Carousel>
-        <a href="#" onClick={console.log("clicked")}><i className="fa fa-angle-double-down"></i></a>
+        <a href="#" onClick={()=>console.log("clicked")}><i className="fa fa-angle-double-down"></i></a>
       </div>
     );
   }
