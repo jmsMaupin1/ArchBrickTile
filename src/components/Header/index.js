@@ -22,7 +22,7 @@ export default class index extends Component {
 		return (
 			<div className={"navigation " + classes}>
 				<div className="fluid-container">
-					<Link className="logo" to="teset">Logo</Link>
+					<a className="logo" href="#top">Logo</a>
 					<div className={"navigation-content"}>
 						<Link className={revealed} to="/">Home</Link>
 						<Link className={revealed} to="/about">About</Link>
