@@ -7,16 +7,18 @@
 }
 
 .services-container {
-	background-color: red;
-	display: flex;
-	justify-content: center;
+	height: 100%;
 }
 
-.services-container > .service-square{
-	background: blue;
-	width: 33%;
+.border-right {
+	border-right: 1px dotted gray;
+}
+
+.border-left {
+	border-left: 1px dotted gray;
 }
 
 .heading {
-  padding-bottom:90px;
+	padding-top: 80px;
+	padding-bottom:250px;
 }

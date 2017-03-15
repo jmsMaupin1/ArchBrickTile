@@ -28,15 +28,14 @@ export default class Home extends Component {
         <ScrollableAnchor id="services">
             <div className="services">
                 <div className="heading">
-                    <div className="row">
-                        <div className="text-center col-sm-8 col-sm-offset-2">
-                            <h2>Our Services</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
-                        </div>
-                    </div> 
+                  <div className="text-center col-sm-8 col-sm-offset-2">
+                    <h2>Our Services</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+                  </div>
                 </div>
-                <div className="services-container">
+                <div className="services-container container">
                   <ServiceSquare 
+                      extraClasses="border-right"
                       icon={"fa-product-hunt"}
                       service={"Supply Products"}
                       subtext={"We supply products for commercial and residential projects."}
@@ -49,12 +48,14 @@ export default class Home extends Component {
                   />
 
                   <ServiceSquare 
+                      extraClasses="border-left"
                       icon={"fa-product-hunt"}
                       service={"Supply Products"}
                       subtext={"We supply products for commercial and residential projects."}
                   />
                 </div>
             </div>
+            
         </ScrollableAnchor>
         <ScrollableAnchor id="gallery">
             <GalleryHeader />

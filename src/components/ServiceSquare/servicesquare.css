@@ -1,5 +1,7 @@
 .service-square {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 .service-icon {
@@ -18,7 +20,6 @@
 .service-square > .col-sm-4:hover .service-icon {
   background-color: #333;
 }
-
 .service-info h3 {
   margin-top: 35px;
 }
