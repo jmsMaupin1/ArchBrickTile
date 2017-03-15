@@ -73,7 +73,11 @@ export default class Home extends Component {
                     subtext="All the Accents"
             />
 
-            <ServiceSquare />
+            <ServiceSquare 
+                icon={"fa-product-hunt"}
+                service={"Supply Products"}
+                subtext={"We supply products for commercial and residential projects."}
+            />
 
             </div>
 		);

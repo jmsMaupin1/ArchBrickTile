@@ -1,5 +1,6 @@
 .service-icon {
   border-radius: 4px;
+  background-color: blue;
   color: #fff;
   display: inline-block;
   font-size: 36px;
@@ -7,7 +8,7 @@
   line-height: 90px;
   width: 90px;  
   -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.92s ease;
 }
 
 .service-square > .col-sm-4:hover .service-icon {
