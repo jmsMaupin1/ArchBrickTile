@@ -1,57 +1,62 @@
-.gallery-square {
-  max-width: 25%;
-  max-height: 25%;
-}
-.container-fluid, 
-.col-sm-3  {
-  overflow: hidden;
-  padding: 0;
-}
-
-.folio-item {
+.square{
   position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
 }
 
-.overlay {
-  background-color: #000;
-  color: #fff; 
-  left: 0;
-  right:0;
-  bottom:-100%;
-  height: 0;
-  position: absolute;
+@media only screen  and (min-width : 1224px) {
+  .square {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+    background: black;
+    overflow: hidden;
+  }
+}
+
+.square-content {
   text-align: center;
-  opacity:0;  
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
-
-.overlay .overlay-content {
-  display: flex;
-  justify-content: center;
-  padding-top: 25%;
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
   width: 100%;
 }
 
-.overlay .overlay-text {
-  display: table-cell;
-  vertical-align: middle;
+.square-overview .square-expand {
+  margin-top: -500px;
+    margin-left: -500px;
 }
 
-.overlay .folio-info {
-  opacity: 0;
-  margin-bottom: 75px;
-  margin-top: -75px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+.square-lightbox:hover .square-lightbox-image {
+  transform: scale(1.5) rotate(-15deg);
 }
 
-.overlay .folio-info h3 {
+.square-lightbox:hover .square-expand {
   margin-top: 0;
-  color: #fff;
+    margin-left:0;
 }
 
-.folio-overview a {
+.square-lightbox:hover .square-overlay {
+  opacity: 1;
+}
+
+.square-lightbox-image {
+  transition: all 0.8s ease-in-out;
+}
+
+.square-overview a {
   font-size: 18px;
   color: #333;
   height: 50px;
@@ -64,42 +69,19 @@
   margin-right: 5px;
 }
 
-.folio-overview a:hover {
-  color: #fff;
-}
-
-.folio-overview .folio-expand {
-  margin-top: -500px;
-  margin-left: -500px;
-}
-
-.folio-image, .folio-overview .folio-expand {
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
-}
-
-.folio-item:hover .folio-image {
-  -webkit-transform: scale(1.5) rotate(-15deg);
-  transform: scale(1.5) rotate(-15deg);
-}
-
-.folio-image img {
+.square-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-}
-
-.folio-item:hover .overlay {
-  opacity: 0.8;
-  bottom: 0;
   height: 100%;
+  opacity: 0;
+  color: white;
+  background: rgba(1,1,1,.5);
+  -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-.folio-item:hover .folio-overview .folio-expand {
-  margin-top: 0;
-  margin-left:0;
-}
-
-.folio-item:hover .overlay .folio-info {
-  opacity: 1;  
-  margin-bottom:0;
-  margin-top:0;
+.square-overview .square-expand {
+  transition: all 0.8s ease-in-out;
 }

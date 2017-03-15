@@ -1,3 +1,7 @@
+.service-square {
+  display: inline-block;
+}
+
 .service-icon {
   border-radius: 4px;
   background-color: blue;

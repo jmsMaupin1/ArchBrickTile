@@ -11,14 +11,14 @@ export default class App extends Component {
 	}
 
 	componentDidMount() {
-		window.addEventListener('scroll', this.handleScroll.bind(this))
+		window.addEventListener('scroll', this.updateScrollTop.bind(this))
 	}
 
 	componentWillUnmount() {
-		window.removeEventListener('scroll', this.handleScroll);
+		window.removeEventListener('scroll', this.updateScrollTop);
 	}
 
-	handleScroll(e){
+	updateScrollTop(e){
 		let top = document.body.scrollTop;
 		this.setState({
 			scrollTop: top

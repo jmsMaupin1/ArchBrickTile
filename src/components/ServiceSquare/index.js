@@ -4,7 +4,7 @@ import './servicesquare.css';
 export default class ServiceSquare extends Component {
 	render() {
 		return (
-			<div className="service-square">
+			<div className="service-square col-sm-3">
 				<div className="text-center col-sm-4">
 		            <div className="service-icon">
 		              <i className={"fa " + this.props.icon}></i>

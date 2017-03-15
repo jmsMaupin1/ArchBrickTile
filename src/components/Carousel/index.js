@@ -5,18 +5,21 @@ import './carousel.css'
 export default class carousel extends Component {
   render() {
     return (
-      <Carousel interval={3000} pauseOnHover={false}>
-        {
-          this.props.slides.map((slide, index)=>{
-            return (
-              <Carousel.Item key={index}>
-                <div className="carousel-slide" style={{backgroundImage: 'url('+slide+')'}}>
-                </div>
-              </Carousel.Item>
-            );
-          })  
-        }
-      </Carousel>
+      <div>
+        <Carousel interval={3000} pauseOnHover={false} indicators={false}>
+          {
+            this.props.slides.map((slide, index)=>{
+              return (
+                <Carousel.Item key={index}>
+                  <div className="carousel-slide" style={{backgroundImage: 'url('+slide+')'}}>
+                  </div>
+                </Carousel.Item>
+              );
+            })  
+          }
+        </Carousel>
+        <a href="#services"><i className="fa fa-angle-double-down"></i></a>
+      </div>
     );
   }
 }
