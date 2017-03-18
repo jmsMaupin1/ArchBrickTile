@@ -1,0 +1,117 @@
+.contact {
+}
+.contact-banner {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	width: 100%;
+	height: 40vh;
+	background-image: url(../../assets/contact-bg.jpg);
+}
+
+.contact-banner:after {
+	content: " ";
+	z-index: 10;
+	display: block;
+	position: absolute;
+	height: 40vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 100, 0, 0.5);
+}
+
+.contact-banner h1 {
+	z-index: 11;
+	line-height: 31vh;
+	color: white;
+}
+
+.social {
+	/*only float left on desktop*/
+	/*width 50% on desktop 100% on mobile*/
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 60vh;
+}
+
+.contact-form {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 60vh;
+}
+
+.contact-form > div {
+	padding-top: 5vh;
+	width: 80%;
+}
+
+.cf-email, .cf-email > input,
+.cf-name, .cf-name > input {
+	width: 80%;
+}
+
+.cf-email > input,
+.cf-name > input,
+.cf-message > textarea {
+	background-color: #eee;
+	border: 1px grey solid;
+	border-radius: 5px;
+	padding: 10px 5px;
+}
+
+.cf-email > input:hover,
+.cf-name > input:hover,
+.cf-message > textarea:hover {
+	background-color: white;
+}
+
+.cf-email, 
+.cf-name,
+.cf-message {
+	margin: 10px 0;
+}
+
+.cf-message, .cf-message > textarea{
+	width: 100%;
+}
+
+.cf-submit > button {
+	color: white;
+	width: 40%;
+	padding: 15px 0;
+	background: #006;
+	border: none;
+	border-radius: 5px;
+}
+
+.social > div {
+	padding-top: 5vh;
+	width: 40%;
+}
+
+.list-item a:hover,
+.list-item a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.fa-stack {
+	margin-right: .5em;
+}
+
+@media only screen and (min-width: 1224px) {
+	.social {
+		float: left;
+		width: 50%;
+		height: 60vh;
+	}
+
+	.contact-form {
+		float: right;
+		width: 50%;
+		height: 60vh;
+	}
+}
