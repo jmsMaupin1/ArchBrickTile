@@ -75,10 +75,20 @@ export default class Contact extends Component {
 							<div className="cf-email"><input name="" placeholder="Your e-mail" title="Your e-mail" type="text" /></div>
 	                        <div className="cf-name"><input name="" placeholder="Your name" title="Your name" type="text" /></div>
 	                        <div className="cf-message"><textarea placeholder="Your massage" name="" rows="5"></textarea></div>
-	                        <div className="cf-submit"><button type="submit">Submit Button</button></div>
+	                        <div className="cf-submit"><button type="submit">Contact Us</button></div>
 						</form>
 					</div>
 				</div>
+
+				<div>
+				<iframe 
+					className="cnt" 
+					width="100%"
+				  	height="400vh"
+				  	frameBorder="0" 
+				  	style={{"border":0}}
+					src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Indianapolis,+Indiana,+IN,+United+States&output=embed"></iframe>
+    			</div>
 			</div>
 		);
 	}

@@ -45,12 +45,12 @@
 
 .contact-form > div {
 	padding-top: 5vh;
-	width: 80%;
+	width: 100%;
 }
 
 .cf-email, .cf-email > input,
 .cf-name, .cf-name > input {
-	width: 80%;
+	width: 70%;
 }
 
 .cf-email > input,
@@ -75,7 +75,7 @@
 }
 
 .cf-message, .cf-message > textarea{
-	width: 100%;
+	width: 90%;
 }
 
 .cf-submit > button {
@@ -89,7 +89,7 @@
 
 .social > div {
 	padding-top: 5vh;
-	width: 40%;
+	width: 100%;
 }
 
 .list-item a:hover,
@@ -107,6 +107,11 @@
 		float: left;
 		width: 50%;
 		height: 60vh;
+	}
+
+	.social > div {
+		padding-top: 5vh;
+		width: 50%;
 	}
 
 	.contact-form {
