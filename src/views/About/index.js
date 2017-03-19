@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './about.css';
 
 import ClayPavers from '../../assets/clay-pavers.jpg';
-import KellyCheslyn from '../../assets/team/Kelly-Cheslyn.png';
+
 
 export default class About extends Component {
 	render() {
@@ -22,7 +22,7 @@ export default class About extends Component {
 					<div className="col-sm-3">
 						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
 							<div className="member-image">
-								<img className="img-responsive" src="../../assets/team/Kelly-Cheslyn.png" alt="" />
+								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/jaquelin-150x150.png"} alt="" />
 							</div>
 							<div className="member-info">
 								<h3>Jacquelin Winters</h3>
@@ -42,7 +42,7 @@ export default class About extends Component {
 					<div className="col-sm-3">
 						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
 							<div className="member-image">
-								<img className="img-responsive" src="images/team/2.jpg" alt="" />
+								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/kelly-150x150.png"} alt="" />
 							</div>
 							<div className="member-info">
 								<h3>Kelly Cheslyn</h3>
@@ -62,7 +62,7 @@ export default class About extends Component {
 					<div className="col-sm-3">
 						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
 							<div className="member-image">
-								<img className="img-responsive" src="images/team/3.jpg" alt="" />
+								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/Robyn2-150x150.jpg"} alt="" />
 							</div>
 							<div className="member-info">
 								<h3>Robyn Leeman</h3>
@@ -82,7 +82,7 @@ export default class About extends Component {
 					<div className="col-sm-3">
 						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
 							<div className="member-image">
-								<img className="img-responsive" src="images/team/4.jpg" alt="" />
+								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/mb.jpg"} alt="" />
 							</div>
 							<div className="member-info">
 								<h3>Mary Beth Spaulding</h3>

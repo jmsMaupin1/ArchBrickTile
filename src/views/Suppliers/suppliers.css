@@ -114,92 +114,105 @@ section {
 }
 
 
-#team {
-  padding-top: 100px;
-}
-.aboutTeam {
-  font-size: 18px;
-  background:
+.post-thumb {
+  position: relative;
 }
 
-h1 {
-margin-top: 100px;
-}
-
-.team-members {
-  margin-bottom: 25px;
-}
-
-.social-icons {
-  margin-top:30px;
+.post-icon {
+  position: absolute;
+  top:10px;
+  right:10px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border-radius:4px;
   text-align: center;
+  color: #fff;
+  font-size: 12px;
 }
 
-.social-icons ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.post-meta {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.post-meta span {
+  margin-right: 16px;
+}
+
+#post-carousel .carousel-indicators {
+  bottom: 3px;
+  left: 90%;
+}
+
+.blog-left-control, .blog-right-control {
+  position: absolute;
+  top: 45%;
+  width: 30px;
+  text-align: center;
+  color: rgba(255,255,255,.7);
+  font-size: 36px;
+}
+
+.blog-left-control {
+  left: 0;
+}
+
+.blog-right-control {
+  right: 0;
+}
+
+.blog-left-control:hover, .blog-right-control:hover {
+  color: #fff;
+}
+
+.entry-header h3 a {
+  line-height: 30px;
+}
+
+.entry-header .date,
+.entry-header .cetagory {
   display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  position: relative;
 }
 
-.social-icons ul li {
-  float: left;
-  margin-right: 8px;
+.entry-header .date:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom:-22px;
+  width: 20px;
+  height: 3px;
 }
 
-.social-icons ul li:last-child {
-  margin-right: 0;
+.entry-content {
+  font-size: 14px;
 }
 
-.social-icons ul li a {
-  color:#fff;
-  background-color: #d9d9d9;
-  height: 36px;
-  width: 36px;
-  line-height: 36px;
-  display: block;
-  font-size: 16px;
-  opacity: 0.8;
-}
-
-.social-icons ul li a:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.team-member {
+.load-more {
+  display:block;
   text-align: center;
-  color: #333;
+  margin-top: 70px;
+}
+
+.btn-loadmore {
+  border: 1px solid #f2f2f2;
+  color: #666666;
   font-size: 14px;
+  font-weight: 600;
+  padding: 15px 125px;
+  text-transform: uppercase;
 }
 
-.team-member:hover .social-icons ul li a.facebook {
-  background-color: #3b5999;
-}
-.team-member:hover .social-icons ul li a.twitter {
-  background-color: #2ac6f7;
-}
-.team-member:hover .social-icons ul li a.dribbble {
-  background-color: #ff5b92;
-}
-.team-member:hover .social-icons ul li a.linkedin {
-  background-color: #036dc0;
-}
-.team-member:hover .social-icons ul li a.rss {
-  background-color: #ff6b00;
-}
-
-#team .img-responsive {
-  width: 100%;
-}
-
-.member-info h3 {
-  margin-top: 35px;
-}
-
-.member-info h4 {
-  font-size: 14px;
-  margin-bottom: 15px;
-  color: #999;
+.btn-loadmore:hover {
+  color:#fff;
 }
