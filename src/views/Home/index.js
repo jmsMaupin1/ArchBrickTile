@@ -28,7 +28,7 @@ export default class Home extends Component {
         ]}/>
         <ScrollableAnchor id="services">
             <div className="services">
-                <div className="heading">
+                <div className="heading-home">
                   <div className="text-center col-sm-8 col-sm-offset-2">
                     <h2>Our Services</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
@@ -63,7 +63,7 @@ export default class Home extends Component {
         </ScrollableAnchor>
         <ScrollableAnchor id="gallery">
           <div>
-          <div className="">
+          <div className="heading-home">
             <div className="text-center col-sm-8 col-sm-offset-2">
               <h2>Product Gallery</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
@@ -116,6 +116,9 @@ export default class Home extends Component {
                     title="Check out our Masonry Accents"
                     subtext="All the Accents"
             />
+            <div>
+              <h1>TODO: put loadmore button here</h1>
+            </div>
           </div>
         </ScrollableAnchor>
       </div>
