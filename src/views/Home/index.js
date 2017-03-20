@@ -18,6 +18,14 @@ export default class Home extends Component {
 		super(props);
         configureAnchors({scrollDuration: 1000});
 	}
+
+  loadMore(){
+    // TODO: load more gallery squares
+    // maybe have a list of squares and only pull the first 8
+    // when load more is clicked then use the entire array
+
+    console.log('loadmore');
+  }
 	render() {
 		return (
 			<div className="home">
@@ -116,8 +124,10 @@ export default class Home extends Component {
                     title="Check out our Masonry Accents"
                     subtext="All the Accents"
             />
-            <div>
-              <h1>TODO: put loadmore button here</h1>
+            <div className="text-center col-sm-8 col-sm-offset-2">
+              <div className="load-more">
+                <a onClick={this.loadMore.bind(this)} className="btn-loadmore"><i className="fa fa-repeat"></i> Load More</a>
+              </div>
             </div>
           </div>
         </ScrollableAnchor>

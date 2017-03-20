@@ -174,7 +174,8 @@ section {
 }
 
 .btn-loadmore {
-  border: 1px solid #f2f2f2;
+  cursor: pointer;
+  border: 1px solid grey;
   color: #666666;
   font-size: 14px;
   font-weight: 600;
@@ -183,5 +184,8 @@ section {
 }
 
 .btn-loadmore:hover {
-  color:#fff;
+  cursor: pointer;
+  color:grey;
 }
+
+/*TODO: load animation rotate on hover*/
