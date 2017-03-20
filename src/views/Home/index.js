@@ -17,6 +17,32 @@ export default class Home extends Component {
 	constructor(props){
 		super(props);
         configureAnchors({scrollDuration: 1000});
+        this.state = {
+          galleryShortList : [
+            {
+              image:BrickProduct,
+              title:"Check out our bricks",
+              subtext:"All the bricks",
+            },
+            {
+              image:CarvedStone,
+              title:"Check out our carved stone",
+              subtext:"All the bricks",
+            },
+            {
+              image:ClayPavers,
+              title:"Check out our clay pavers",
+              subtext:"All the bricks",
+            },
+            {
+              image:MasonryAccents,
+              title:"Check out our masonry accents",
+              subtext:"All the bricks",
+            }
+          ],
+          galleryFullList  : [],
+          showFullList : false
+        }
 	}
 
   loadMore(){
@@ -64,73 +90,28 @@ export default class Home extends Component {
                   />
                 </div>
             </div>
-            
         </ScrollableAnchor>
+
         <ScrollableAnchor id="about">
           <AboutParallax />
         </ScrollableAnchor>
+
         <ScrollableAnchor id="gallery">
-          <div>
           <div className="heading-home">
             <div className="text-center col-sm-8 col-sm-offset-2">
               <h2>Product Gallery</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
             </div>
           </div>
-            <GallerySquare 
-                    image={BrickProduct}
-                    title="Check out our bricks"
-                    subtext="All the bricks"
-            />
-
-            <GallerySquare 
-                    image={CarvedStone}
-                    title="Check out our carved stone"
-                    subtext="All the carved stone"
-            />
-
-            <GallerySquare 
-                    image={ClayPavers}
-                    title="Clay Pavers"
-                    subtext="All the Clay Pavers"
-            />
-
-            <GallerySquare 
-                    image={MasonryAccents}
-                    title="Check out our Masonry Accents"
-                    subtext="All the Accents"
-            />
-
-            <GallerySquare 
-                    image={BrickProduct}
-                    title="Check out our bricks"
-                    subtext="All the bricks"
-            />
-
-            <GallerySquare 
-                    image={CarvedStone}
-                    title="Check out our carved stone"
-                    subtext="All the carved stone"
-            />
-
-            <GallerySquare 
-                    image={ClayPavers}
-                    title="Clay Pavers"
-                    subtext="All the Clay Pavers"
-            />
-
-            <GallerySquare 
-                    image={MasonryAccents}
-                    title="Check out our Masonry Accents"
-                    subtext="All the Accents"
-            />
+        </ScrollableAnchor>
+        {this.state.galleryShortList.map((square, i)=>{
+          return <GallerySquare key={i} image={square.image} title={square.title} subtext={square.subtext}/>
+        })}
             <div className="text-center col-sm-8 col-sm-offset-2">
               <div className="load-more">
                 <a onClick={this.loadMore.bind(this)} className="btn-loadmore"><i className="fa fa-repeat"></i> Load More</a>
               </div>
             </div>
-          </div>
-        </ScrollableAnchor>
       </div>
 		);
 	}
