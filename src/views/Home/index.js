@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router';
 import Carousel from '../../components/Carousel';
 import GalleryHeader from '../../components/ProductGalleryHeader';
+import AboutParallax from '../../components/AboutParallax';
 import GallerySquare from '../../components/GallerySquare';
 import ServiceSquare from '../../components/ServiceSquare';
 import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
@@ -57,57 +58,66 @@ export default class Home extends Component {
             </div>
             
         </ScrollableAnchor>
-        <ScrollableAnchor id="gallery">
-            <GalleryHeader />
+        <ScrollableAnchor id="about">
+          <AboutParallax />
         </ScrollableAnchor>
-        <GallerySquare 
-                image={BrickProduct}
-                title="Check out our bricks"
-                subtext="All the bricks"
-        />
+        <ScrollableAnchor id="gallery">
+          <div>
+          <div className="">
+            <div className="text-center col-sm-8 col-sm-offset-2">
+              <h2>Product Gallery</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+            </div>
+          </div>
+            <GallerySquare 
+                    image={BrickProduct}
+                    title="Check out our bricks"
+                    subtext="All the bricks"
+            />
 
-        <GallerySquare 
-                image={CarvedStone}
-                title="Check out our carved stone"
-                subtext="All the carved stone"
-        />
+            <GallerySquare 
+                    image={CarvedStone}
+                    title="Check out our carved stone"
+                    subtext="All the carved stone"
+            />
 
-        <GallerySquare 
-                image={ClayPavers}
-                title="Clay Pavers"
-                subtext="All the Clay Pavers"
-        />
+            <GallerySquare 
+                    image={ClayPavers}
+                    title="Clay Pavers"
+                    subtext="All the Clay Pavers"
+            />
 
-        <GallerySquare 
-                image={MasonryAccents}
-                title="Check out our Masonry Accents"
-                subtext="All the Accents"
-        />
+            <GallerySquare 
+                    image={MasonryAccents}
+                    title="Check out our Masonry Accents"
+                    subtext="All the Accents"
+            />
 
-        <GallerySquare 
-                image={BrickProduct}
-                title="Check out our bricks"
-                subtext="All the bricks"
-        />
+            <GallerySquare 
+                    image={BrickProduct}
+                    title="Check out our bricks"
+                    subtext="All the bricks"
+            />
 
-        <GallerySquare 
-                image={CarvedStone}
-                title="Check out our carved stone"
-                subtext="All the carved stone"
-        />
+            <GallerySquare 
+                    image={CarvedStone}
+                    title="Check out our carved stone"
+                    subtext="All the carved stone"
+            />
 
-        <GallerySquare 
-                image={ClayPavers}
-                title="Clay Pavers"
-                subtext="All the Clay Pavers"
-        />
+            <GallerySquare 
+                    image={ClayPavers}
+                    title="Clay Pavers"
+                    subtext="All the Clay Pavers"
+            />
 
-        <GallerySquare 
-                image={MasonryAccents}
-                title="Check out our Masonry Accents"
-                subtext="All the Accents"
-        />
-
+            <GallerySquare 
+                    image={MasonryAccents}
+                    title="Check out our Masonry Accents"
+                    subtext="All the Accents"
+            />
+          </div>
+        </ScrollableAnchor>
       </div>
 		);
 	}
