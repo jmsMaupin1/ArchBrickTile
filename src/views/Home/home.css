@@ -27,6 +27,10 @@
 	margin-top: 800px;
 }
 
+.pad-bottom {
+	padding-bottom: 50px;
+}
+
 @media only screen and (max-width: 1223px){
 	.heading {
 		padding-bottom: 100px;
