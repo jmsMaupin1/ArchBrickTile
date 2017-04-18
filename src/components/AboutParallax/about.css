@@ -14,8 +14,9 @@
 	width: 100%;
 }
 
-.about-container h2{
+.about-container h3{
 	width: 80%;
+  padding-top: 60px;
 	line-height: 2;
 	color: white;
 }

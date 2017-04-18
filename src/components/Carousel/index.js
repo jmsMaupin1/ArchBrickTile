@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Carousel} from 'react-bootstrap';
+import Logo from '../../assets/abt-logo.png'
 import './carousel.css'
 
 export default class carousel extends Component {
@@ -18,6 +19,7 @@ export default class carousel extends Component {
             })  
           }
         </Carousel>
+        <img className='carousel-logo' src={Logo} role='presentation' />
         <a href="#services"><i className="fa fa-angle-double-down"></i></a>
       </div>
     );

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import './App.css';
 
 export default class App extends Component {
@@ -31,6 +32,7 @@ export default class App extends Component {
 		        {/*TODO: add Header and footer*/}
 		        <Header isSticky={this.state.scrollTop > 80}/>
 		        {React.cloneElement(this.props.children, {...this.props})}
+		        <Footer />
 	      	</div>
 	  	);
 	}
