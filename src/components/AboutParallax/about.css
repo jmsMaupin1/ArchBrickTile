@@ -21,9 +21,21 @@
 	color: white;
 }
 
-.parallax {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+@media only screen  and (min-width : 1224px) {
+  .parallax {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+@media only screen  and (max-width : 1223px) {
+  .about-px {
+    height: 900px;
+  }
+
+  .parallax {
+    background-size: cover;
+    background-repeat: none;
+  }
 }

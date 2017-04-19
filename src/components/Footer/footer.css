@@ -1,0 +1,35 @@
+.footer > .footer-content {
+	background: #028fcc;
+	padding: 10px 0;
+}
+
+.footer-content > .social-icons ul li a {
+	background-color:#028fcc;
+	background-color:#0055cc;
+}
+
+.footer .social-icons ul li a.envelope:hover {
+  background-color: #CECB26;
+}
+
+.footer .social-icons ul li a.facebook:hover {
+  background-color: #3b5999;
+}
+.footer .social-icons ul li a.twitter:hover {
+  background-color: #2ac6f7;
+}
+.footer .social-icons ul li a.dribbble:hover {
+  background-color: #ff5b92;
+}
+.footer .social-icons ul li a.linkedin:hover {
+  background-color: #036dc0;
+}
+.footer .social-icons ul li a.tumblr:hover {
+  background-color: #ff6b00;
+}
+
+@media only screen  and (max-width : 1223px) {
+	.footer {
+		display: none
+	}
+}

@@ -100,8 +100,8 @@ margin-top: 100px;
 }
 
 .social-icons ul li a {
-  color:#fff;
-  background-color: #d9d9d9;
+  color:#fff;/*
+  background-color: #d9d9d9;*/
   height: 36px;
   width: 36px;
   line-height: 36px;
