@@ -1,8 +1,121 @@
 import React, { Component } from 'react';
+import SuppliersSquare from '../../components/SuppliersSquare';
+import {Link} from 'react-router';
+
 import './suppliers.css';
 
 
 export default class Suppliers extends Component {
+    constructor(props) {
+		super(props);
+		this.state = {
+			suppliersList: [
+				{
+					image:"picture",
+                    title:"AKDO",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+				{
+					image:"picture",
+                    title:"Adex USA",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+				{
+					image:"picture",
+                    title:"Arto",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+				{
+					image:"picture",
+                    title:"Artistic Tile",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+				{
+					image:"picture",
+                    title:"Ceramica",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+				{
+					image:"picture",
+                    title:"DuChateu",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+				{
+					image:"picture",
+                    title:"Landmark",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+				{
+					image:"picture",
+                    title:"Island Stone",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+				{
+					image:"picture",
+                    title:"Provenza",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+				{
+					image:"picture",
+                    title:"Sonoma Tile",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+				{
+					image:"picture",
+                    title:"Stonepeak",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+				{
+					image:"picture",
+                    title:"Latircrete",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+				{
+					image:"picture",
+                    title:"Stonecraft",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+				{
+					image:"picture",
+                    title:"Walker Zanger",
+					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				},
+			],
+			showButtonText:"Show More",
+			numberShown: 6
+		  }
+	}
+
+
+	changeAmountShown(){
+      this.setState((state, props) => {
+        return {
+          numberShown: state.numberShown > 6 ? 6 : state.supplierList.length,
+          showButtonText: state.showButtonText==="Show Fewer"? "Show More" : "Show Fewer"
+        }
+      });
+    }
+
+    loadMore(){
+      //TODO: change buton to loadFewer
+      this.setState((state, props) => {
+        return {
+          numberShown: state.supplierList.length,
+          showButtonText: "Show Fewer"
+        }
+      });
+    }
+
+    loadFewer(){
+      //TODO: change button to loadMore
+      this.setState((state, props) => {
+        return {
+          numberShown: 8,
+          showButtonText: "Show More"
+        }
+      });
+    }
+
 	render() {
 		return (
 			<div>
@@ -181,6 +294,15 @@ export default class Suppliers extends Component {
 						<a href="#" className="btn-loadmore"><i className="fa fa-repeat"></i> Load More</a>
 					  </div>
 					</div>
+				</div>
+			</section>
+			<section>
+				<div>
+					<h1>Hello World</h1>
+					{/* {this.state.supplerList.map((square, i)=>{
+				          if(i<this.state.numberShown)return <SuppliersSquare key={i} image={square.image} title={square.title} subtext={square.subtext}/>
+				        })} */}
+
 				</div>
 			</section>
 
