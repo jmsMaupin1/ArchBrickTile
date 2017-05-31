@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Carousel} from 'react-bootstrap';
-import Logo from '../../assets/abt-logo.png'
+import Logo from '../../assets/abt-logo2.png'
 import './carousel.css'
 
 export default class carousel extends Component {
