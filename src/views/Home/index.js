@@ -107,7 +107,6 @@ export default class index extends Component {
 
 	render() {
 		return (
-<<<<<<< HEAD
 			<div>
 				<Carousel scrollTo="products" slides={[
 					"http://www.archbricktile.com/wp-content/gallery/living-spaces/1384_1-818x478.jpg",
