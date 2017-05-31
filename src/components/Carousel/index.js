@@ -20,7 +20,7 @@ export default class carousel extends Component {
           }
         </Carousel>
         <img className='carousel-logo' src={Logo} role='presentation' />
-        <a href="#services"><i className="fa fa-angle-double-down"></i></a>
+        <a href={"#" + this.props.scrollTo}><i className="fa fa-angle-double-down"></i></a>
       </div>
     );
   }

@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router';
 import Carousel from '../../components/Carousel';
-import AboutParallax from '../../components/AboutParallax';
 import GallerySquare from '../../components/GallerySquare';
+import AboutParallax from '../../components/AboutParallax';
 import ServiceSquare from '../../components/ServiceSquare';
 import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
-
 
 import BrickProduct from '../../assets/brick-product.jpg';
 import ClayPavers from '../../assets/clay-pavers.jpg';
@@ -20,8 +18,8 @@ import MasonryVeneers from '../../assets/masonry-veneers.jpg';
 import MetalTile from '../../assets/metal-tiles.jpg';
 import StoneFloors from '../../assets/stone-floors.jpg';
 import PorcelainTile from '../../assets/porcelain-tiles.jpg';
-import './home.css';
-export default class Home extends Component {
+
+export default class index extends Component {
 	constructor(props){
 		super(props);
         configureAnchors({scrollDuration: 1000});
@@ -98,97 +96,117 @@ export default class Home extends Component {
         }
 	}
 
-  changeAmountShown(){
-    this.setState((state, props) => {
-      return {
-        numberShown: state.numberShown > 8 ? 8 : state.galleryList.length,
-        showButtonText: state.showButtonText==="Show Fewer"? "Show More" : "Show Fewer"
-      }
-    });
-  }
+	changeAmount(){
+		this.setState((state, props) => {
+      		return {
+		        numberShown: state.numberShown > 8 ? 8 : state.galleryList.length,
+		        showButtonText: state.showButtonText==="Show Fewer"? "Show More" : "Show Fewer"
+	      	}
+    	});
+	}
 
-  loadMore(){
-    //TODO: change buton to loadFewer
-    this.setState((state, props) => {
-      return {
-        numberShown: state.galleryList.length,
-        showButtonText: "Show Fewer"
-      }
-    });
-  }
-
-  loadFewer(){
-    //TODO: change button to loadMore
-    this.setState((state, props) => {
-      return {
-        numberShown: 8,
-        showButtonText: "Show More"
-      }
-    });
-  }
 	render() {
 		return (
-			<div className="home">
-				<Carousel slides={[
-    		"http://www.archbricktile.com/wp-content/gallery/living-spaces/1384_1-818x478.jpg",
-    		"http://www.archbricktile.com/wp-content/gallery/living-spaces/2011-catalog_final_full-size-soft-copy_page_041.jpg",
-    		"http://www.archbricktile.com/wp-content/gallery/living-spaces/living_horz_050.jpg"
-        ]}/>
-        <ScrollableAnchor id="services">
-            <div className="services">
-                <div className="heading-home">
-                  <div className="text-center col-sm-8 col-sm-offset-2">
-                    <h2>Our Services</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
-                  </div>
-                </div>
-                <div className="services-container container">
-                  <ServiceSquare 
-                      extraClasses="border-right"
-                      icon={"fa-product-hunt"}
-                      service={"Supply Products"}
-                      subtext={"We supply products for commercial and residential projects."}
-                  />
+			<div>
+				<Carousel scrollTo="products" slides={[
+					"http://www.archbricktile.com/wp-content/gallery/living-spaces/1384_1-818x478.jpg",
+    				"http://www.archbricktile.com/wp-content/gallery/living-spaces/2011-catalog_final_full-size-soft-copy_page_041.jpg",
+    				"http://www.archbricktile.com/wp-content/gallery/living-spaces/living_horz_050.jpg"
+				]}></Carousel>
 
-                  <ServiceSquare 
-                      icon={"fa-product-hunt"}
-                      service={"Supply Products"}
-                      subtext={"We supply products for commercial and residential projects."}
-                  />
+				<ScrollableAnchor id="products">
+					<div className="text-center" style={{
+						paddingTop: "80px",
+						paddingBottom: "80px"
+					}}>
+						<h2>Product Gallery</h2>
+						<p>Check out our products</p>	
+					</div>
+				</ScrollableAnchor>
 
-                  <ServiceSquare 
-                      extraClasses="border-left"
-                      icon={"fa-product-hunt"}
-                      service={"Supply Products"}
-                      subtext={"We supply products for commercial and residential projects."}
-                  />
-                </div>
-            </div>
-        </ScrollableAnchor>
+				<div style={{
+					width: "100%",
+					maxHeight: "6000px",
+					overflow: "hidden"
+				}}>
+					{this.state.galleryList.map((square, i)=>{
+	          			if(i<this.state.numberShown)return <GallerySquare key={i} image={square.image} title={square.title} subtext={square.subtext}/>
+	        		})}
+        		</div>
 
-        <ScrollableAnchor id="about">
-          <AboutParallax />
-        </ScrollableAnchor>
+        		<div className="text-center" style={{
+        			width: "100%",
+        			height: "100%",
+        			paddingTop: "40px",
+        			paddingBottom: "40px"
+        		}}>
+        			<a style={{
+        				cursor: "pointer",
+        				border: "1px solid grey",
+        				color: "#666",
+        				fontSize: "14px",
+        				fontWeight: "600",
+        				padding: "15px 125px",
+        				textTransform: "uppercase"
+        			}}
+        			onClick={this.changeAmount.bind(this)}>
+        				{this.state.showButtonText}
+        			</a>
+        		</div>
 
-        <ScrollableAnchor id="gallery">
-          <div className="heading-home">
-            <div className="text-center col-sm-8 col-sm-offset-2">
-              <h2>Product Gallery</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
-            </div>
-          </div>
-        </ScrollableAnchor>
+        		<ScrollableAnchor id="about">
+        			<AboutParallax />
+        		</ScrollableAnchor>
 
-        {this.state.galleryList.map((square, i)=>{
-          if(i<this.state.numberShown)return <GallerySquare key={i} image={square.image} title={square.title} subtext={square.subtext}/>
-        })}
+        		<ScrollableAnchor id="services">
+        			<div style={{
+        				paddingTop: "80px",
+        				paddingBottom: "80px"
+        			}} className="text-center">
+        				<h2>Our Services</h2>
+        				<p>Check out the services we offer</p>
+        			</div>
+        		</ScrollableAnchor>
+        		<div style={{
+        			height: "450px"
+        		}}>
+        			<ServiceSquare
+        				icon="fa-product-hunt"
+        				service="Supply Products"
+        				subtext="We supply products for commercial and residential projects."
+        			/>
 
-        <div className="text-center col-sm-8 col-sm-offset-2 pad-bottom">
-          <div className="load-more">
-            <a onClick={this.changeAmountShown.bind(this)} className="btn-loadmore"><i className="fa fa-repeat"></i> {this.state.showButtonText}</a>
-          </div>
-        </div>
-      </div>
+        			<ServiceSquare        				
+        				icon="fa-product-hunt"
+        				service="Supply Products"
+        				subtext="We supply products for commercial and residential projects."
+        			/>
+
+        			<ServiceSquare        				
+        				icon="fa-product-hunt"
+        				service="Supply Products"
+        				subtext="We supply products for commercial and residential projects."
+        			/>
+
+        			<ServiceSquare
+						icon="fa-product-hunt"
+        				service="Supply Products"
+        				subtext="We supply products for commercial and residential projects."
+        			/>
+
+        			<ServiceSquare
+						icon="fa-product-hunt"
+        				service="Supply Products"
+        				subtext="We supply products for commercial and residential projects."
+        			/>
+
+        			<ServiceSquare
+						icon="fa-product-hunt"
+        				service="Supply Products"
+        				subtext="We supply products for commercial and residential projects."
+        			/>
+        		</div>
+			</div>
 		);
 	}
 }
