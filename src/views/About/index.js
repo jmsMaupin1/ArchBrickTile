@@ -16,6 +16,9 @@ export default class About extends Component {
 						<h2>The Team</h2>
 						<p>Architectural Brick & Tile has almost 50 years of experience making dreams come true. We offer personal service, boundless knowledge and exclusive product lines. This is not your ordinary Tile Dealer. We began in the brick business and have not forgotten our roots, while expanding our product lines to include manufactured stone products, thin brick and hardscapes.</p>
 					</div>
+                    <div className="text-center col-sm-4 col-sm-offset-3 wow fadeInUp">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yKLstVY15Yo" frameborder="0" allowfullscreen></iframe>
+                    </div>
 				</div>
 
 			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
