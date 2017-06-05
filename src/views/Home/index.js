@@ -120,7 +120,7 @@ export default class index extends Component {
 						paddingBottom: "80px"
 					}}>
 						<h2>Product Gallery</h2>
-						<p>Check out our products</p>	
+						<p>Check out our products</p>
 					</div>
 				</ScrollableAnchor>
 
@@ -164,7 +164,7 @@ export default class index extends Component {
         				paddingBottom: "80px"
         			}} className="text-center">
         				<h2>Our Services</h2>
-        				<p>Please take advantage of our in house design professionals to make your vision come to life. Bring in your kitchen cabinet door, sofa pillow or that favorite area rug you want to show off and let our designers help create a special space with you.</p>
+        				<p>As the owner of a 45 year old distributorship, we are proud to have evolved from a brick distributorship to a specialty building materials center specializing in foreign and domestic hardwood, brick, stone, and paving exteriors, porcelain, glass, metal, and decorative tiles and an extensive offering of natural stone flooring, mosaic and architectural moldings and features. With my sister, Kelly, and my daughter, Robyn, by my side, we are devoted to introducing unique and innovative materials to our marketplace and providing our clients, both commercial and residential, the means to achieve their design solutions and dreams. Our selections range from domestic brick, stones, and Porcelains to custom fireplaces, mosaic designs, glass tiles and panels, and exotic hardwoods. Through our infinite resources, we can find unequaled products and help you in your design and solution process. </p>
         			</div>
         		</ScrollableAnchor>
         		<div style={{
@@ -172,39 +172,21 @@ export default class index extends Component {
         		}}>
       			<ServiceSquare
       				icon="fa-product-hunt"
-      				service="Supply Products"
-      				subtext="We supply products for commercial and residential projects."
-      			/>
-
-      			<ServiceSquare        				
-      				icon="fa-product-hunt"
-      				service="Supply Products"
-      				subtext="We supply products for commercial and residential projects."
-      			/>
-
-      			<ServiceSquare        				
-      				icon="fa-product-hunt"
-      				service="Supply Products"
-      				subtext="We supply products for commercial and residential projects."
+      				service="Residential"
+      				subtext="Create your own special environment around your personal lifestyle. Step out of the box and mix elements like stone and glass mosaics accented with mirror pieces to update your bathroom or kitchen for a touch of sophistication."
       			/>
 
       			<ServiceSquare
-				      icon="fa-product-hunt"
-      				service="Supply Products"
-      				subtext="We supply products for commercial and residential projects."
+      				icon="fa-product-hunt"
+      				service="Commercial"
+      				subtext="For your commercial project, think BIG — Check out our extensive selection of large format porcelain and natural stones for your walls and floors, a contemporary luxurious choice!"
       			/>
 
-        		<ServiceSquare
-						    icon="fa-product-hunt"
-        				service="Supply Products"
-        				subtext="We supply products for commercial and residential projects."
-        		/>
-
-        		<ServiceSquare
-						    icon="fa-product-hunt"
-        				service="Supply Products"
-        				subtext="We supply products for commercial and residential projects."
-        		/>
+      			<ServiceSquare
+      				icon="fa-product-hunt"
+      				service="Exterior"
+      				subtext="Want to add some usable square footage to your home the easy way? Try adding an outdoor “living room” complete with brick or flagstone pavers and a stacked stone fireplace and kitchen area."
+      			/>
         		</div>
 			</div>
 		);
