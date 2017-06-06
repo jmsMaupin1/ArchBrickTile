@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import './header.css';
+import ABTIcon from '../../assets/abt-icon2.png';
+
 
 export default class index extends Component {
 	constructor(props) {
@@ -22,7 +24,14 @@ export default class index extends Component {
 		return (
 			<div className={"navigation " + classes}>
 				<div className="fluid-container">
-					<a className="logo" href="#top">Logo</a>
+					<Link to="/"><img className="logo" src={ABTIcon} style={{
+							paddingTop: "10px",
+						}}></img></Link><span style={{
+							color: "white",
+							font: "100px",
+							paddingLeft: "20px",
+							paddingTop: "20px",
+						}}>(317) 842-2888</span>
 					<div className={"navigation-content"}>
 						<Link className={revealed} to="/">Home</Link>
 						<Link className={revealed} to="/about">About</Link>
@@ -35,4 +44,3 @@ export default class index extends Component {
 		);
 	}
 }
-
