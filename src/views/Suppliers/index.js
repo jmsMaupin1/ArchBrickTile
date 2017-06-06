@@ -14,72 +14,86 @@ export default class Suppliers extends Component {
 				{
 					image:"picture",
                     title:"AKDO",
-					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					link: "http://www.akdo.com",
+					subtext: "AKDO offers an incredible collection of natural stone tiles, slabs, mosaics and specialty stone in an unrivaled variety of colors and patterns. ",
 				},
 				{
 					image:"picture",
                     title:"Adex USA",
-					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					link: "http://www.adexusa.com",
+					subtext: "LADEX USA has multiple finishes, colors, types and styles of products that will work in unison or stand alone.",
 				},
 				{
 					image:"picture",
                     title:"Arto",
+					link: "",
 					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 				},
 				{
 					image:"picture",
                     title:"Artistic Tile",
-					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					link: "http://www.artistictile.com",
+					subtext: "Artistic Tile offers artisan tile, handcrafted stone, distinctive fittings and accessories for bath, kitchen and home.",
 				},
 				{
 					image:"picture",
-                    title:"Ceramica",
-					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    title:"Ceramica Vogue",
+					link: "http://www.ceramicavogue.it/ceramic-frostproof-tiles-company.asp",
+					subtext: "Ceramica Vogue products, which comprise a wide range of collections designed to create innovative furnishing solutions for both indoor and outdoor areas.",
 				},
 				{
 					image:"picture",
                     title:"DuChateu",
-					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					link: "http://duchateau.com/",
+					subtext: "DuChateau manufactures antique reproduction hard-wax oil wood floors using artistic methods perfected by European craftsmen.",
 				},
 				{
 					image:"picture",
                     title:"Landmark",
-					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					link: "http://www.landmarkmetalcoat.com",
+					subtext: "Create unique one-of-a-kind kitchen backsplashes using a variety of Landmark’s stone choices. All mosaics can be customized to meet your specified size and design.",
 				},
 				{
 					image:"picture",
                     title:"Island Stone",
-					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					link: "http://www.islandstone.com",
+					subtext: "Product categories include multiple types of pebble tiles, glass tiles, mosaic tiles, random tiles and wall claddings with selection of signature stone and materials.",
 				},
 				{
 					image:"picture",
                     title:"Provenza",
-					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					link: "http://www.ceramicheprovenza.com/index.html#/home",
+					subtext: "Provenza sets new frontiers in research and innovation, with products that represent the very best in Italian-made ceramic coverings.",
 				},
 				{
 					image:"picture",
                     title:"Sonoma Tile",
-					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					link: "http://www.sonomatilemakers.com",
+					subtext: "Our rich textures, hand carved designs and fabulous color palette offer limitless design options. We create an absolutely amazing array of handcrafted tiles – from timeless ceramic borders to decorative stone accents.",
 				},
 				{
 					image:"picture",
-                    title:"Stonepeak",
-					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    title:"Stonepeak Ceramics",
+					link: "http://www.stonepeakceramics.com",
+					subtext: "Nestled in the hills of Tennessee’s Smoky Mountains, is a company with a uniquely American character that honors the time-proven tradition of fine Italian porcelain ceramics. ",
 				},
 				{
 					image:"picture",
                     title:"Latircrete",
-					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					link:"http://www.laticrete.com",
+					subtext: "LATICRETE is a world-wide manufacturer and marketer of installation systems for ceramic tile and stone used in residential, commercial and industrial applications. Architecturally specified and professionally endorsed by installers. ",
 				},
 				{
 					image:"picture",
                     title:"Stonecraft",
-					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					link:"http://www.stonecraft.com",
+					subtext: "Our range of stones is replete with profile-specific character: jagged edge shapes, deep nooks, hand-chiseled surfaces, various stone sizes and water-worn smoothness.",
 				},
 				{
 					image:"picture",
                     title:"Walker Zanger",
-					subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					link: "http://www.walkerzanger.com",
+					subtext: "Walker Zanger combines traditional tile-making techniques with a modern sophistication that transcends any singular design style.",
 				},
 			],
 			showButtonText:"Show More",
@@ -133,7 +147,7 @@ export default class Suppliers extends Component {
 					</ScrollableAnchor>
 
 					{this.state.suppliersList.map((square, i)=>{
-					  if(i<this.state.numberShown)return <SuppliersSquare key={i} image={square.image} title={square.title} subtext={square.subtext}/>
+					  if(i<this.state.numberShown)return <SuppliersSquare key={i} image={square.image} title={square.title} link={square.link} subtext={square.subtext}/>
 					})}
 					<div className="text-center col-sm-8 col-sm-offset-2 pad-bottom">
 					  <div className="load-more">
