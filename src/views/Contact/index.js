@@ -54,7 +54,7 @@ export default class Contact extends Component {
 				  	height="400px"
 				  	frameBorder="0"
 				  	style={{"border":0}}
-					src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Indianapolis,+Indiana,+IN,+United+States&output=embed"></iframe>
+					src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Fishers,+Indiana,+IN,+United+States&output=embed"></iframe>
     			</div>
 			</div>
 		);
