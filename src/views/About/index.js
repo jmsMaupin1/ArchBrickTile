@@ -1,10 +1,160 @@
 import React, { Component } from 'react';
 import './about.css';
-
-import ClayPavers from '../../assets/clay-pavers.jpg';
+import EmployeeSquare from '../../components/EmployeeSquare';
+import LaurenRiley from '../../assets/team/Lauren-Riley1.1.png';
+import JenniferHobbs from '../../assets/team/Jennifer-Hobbs1.1.jpg';
+import WendyRichmond from '../../assets/team/Wendy-Richmond1.1.jpg';
+import JoanneHolman from '../../assets/team/Joanne-Holman1.1.jpg';
+import MaryAnnLucas from '../../assets/team/Mary-Ann-Lucas.jpg';
+import AnnZimmerman from '../../assets/team/Ann-Zimmerman.jpg';
+import TimOwen from '../../assets/team/Tim-Owen1.1.jpg';
+import PeterKerfoot from '../../assets/team/Pete-Kerfoot.jpg';
+import MarkSawyer from '../../assets/team/Mark-Sawyer1.1.jpg';
+import JessicaLeavell from '../../assets/team/Jessica-Leavell1.1.jpg';
+import JulieKelch from '../../assets/team/Julie-Kelch1.1.jpg';
+import KristenPetty from '../../assets/team/Kristen-Petty.jpg';
+import RickZirkle from '../../assets/team/Rick-Zirkle.jpg';
+import ScottNoel from '../../assets/team/Scott-Noel.jpg';
+import KellyCheslyn from '../../assets/team/Kelly-Cheslyn.png';
+import JacquelinWinter from '../../assets/team/Jacquelin-Winter.png';
+import MaryBethSpaulding from '../../assets/team/Mary-Beth-Spaulding.jpg';
+import RobynLeeman from '../../assets/team/Robyn-Leeman.jpg';
 
 
 export default class About extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			residentialList: [
+				{
+					image: JenniferHobbs,
+					name: "Jennifer Hobbs",
+					title: "Residential Sales"
+				},
+				{
+					image: LaurenRiley,
+					name: "Lauren Riley",
+					title: "Residential Sales"
+				},
+				{
+					image: WendyRichmond,
+					name: "Wendy Richmond",
+					title: "Residential Sales"
+				},
+				{
+					image: JoanneHolman,
+					name: "Joanne Holman",
+					title: "Residential Sales"
+				},
+			],
+			commercialList: [
+				{
+					image: MaryAnnLucas,
+					name: "Mary Ann Lucas",
+					title: "Commercial Sales"
+				},
+				{
+					image: AnnZimmerman,
+					name: "Ann Zimmerman",
+					title: "Inside Commercial Sales"
+				},
+				{
+					image: TimOwen,
+					name: "Tim Owen",
+					title: "Masonry & Stone Sales"
+				},
+				{
+					image: MarkSawyer,
+					name: "Mark Sawyer",
+					title: "Masonry & Stone Sales"
+				},
+				{
+					image: PeterKerfoot,
+					name: "Peter Kerfoot",
+					title: "Masonry & Stone Sales"
+				},
+			],
+			supportList: [
+				{
+					image: JessicaLeavell,
+					name: "Jessica Leavell",
+					title: "Customer Service Purchasing Agent"
+				},
+				{
+					image: JulieKelch,
+					name: "Julie Kelch",
+					title: "Coordinator"
+				},
+				{
+					image: KristenPetty,
+					name: "Kristen Petty",
+					title: "Showroom Assistant"
+				},
+				{
+					image: RickZirkle,
+					name: "Rick Zirkle",
+					title: "Warehouse Customer Service"
+				},
+				{
+					image: ScottNoel,
+					name: "Scott Noel",
+					title: "Warehouse Customer Service"
+				},
+			],
+			adminstrationList: [
+				{
+					image: JacquelinWinter,
+					name: "Jacquelin Winter",
+					title: "President"
+				},
+				{
+					image: KellyCheslyn,
+					name: "Kelly Cheslyn",
+					title: "Vice President"
+				},
+				{
+					image: RobynLeeman,
+					name: "Robyn Leeman",
+					title: "Controller"
+				},
+				{
+					image: MaryBethSpaulding,
+					name: "Mary Beth Spaulding",
+					title: "Director of Operations"
+				},
+			],
+			showButtonText:"Show More",
+			numberShown: 6
+		}
+	}
+	changeAmountShown(){
+      this.setState((state, props) => {
+        return {
+          numberShown: state.numberShown > 6 ? 6 : state.suppliersList.length,
+          showButtonText: state.showButtonText==="Show Fewer"? "Show More" : "Show Fewer"
+        }
+      });
+    }
+
+    loadMore(){
+      //TODO: change buton to loadFewer
+      this.setState((state, props) => {
+        return {
+          numberShown: state.suppliersList.length,
+          showButtonText: "Show Fewer"
+        }
+      });
+    }
+
+    loadFewer(){
+      //TODO: change button to loadMore
+      this.setState((state, props) => {
+        return {
+          numberShown: 8,
+          showButtonText: "Show More"
+        }
+      });
+    }
 	render() {
 		return (
 			<div>
@@ -24,240 +174,37 @@ export default class About extends Component {
 			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
 				<h3>Residential Sales Team</h3>
 			</div>
-			<div className="team-members">
-				<div className="row">
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/Jennifer.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Jennifer Hobbs</h3>
-								<h4>Residential Sales</h4>
-							</div>
-						</div>
-					</div>
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/2015.8.3-Laurens-pictures-009.png"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Lauren Riley</h3>
-								<h4>Residential Sales</h4>
-							</div>
-						</div>
-					</div>
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/2014.12.5-Wendy-Richmond.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Wendy Richmond</h3>
-								<h4>Residential Sales</h4>
-							</div>
-						</div>
-					</div>
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/2014.12.5-Joanne-Holman2.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Joanne Holman</h3>
-								<h4>Residential Sales</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			{this.state.residentialList.map((square, i)=>{
+			  if(i<this.state.numberShown)return <EmployeeSquare key={i} image={square.image} name={square.name} title={square.title} />
+			})}
+			{/* <div className="text-center col-sm-8 col-sm-offset-2 pad-bottom">
+			  <div className="load-more">
+				<a onClick={this.changeAmountShown.bind(this)} className="btn-loadmore"><i className="fa fa-repeat"></i> {this.state.showButtonText}</a>
+			  </div>
+			</div> */}
 
 			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
 				<h3>Commercial Sales Team</h3>
 			</div>
-			<div className="team-members">
-				<div className="row">
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/Mary-Ann.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Mary Ann Lucas</h3>
-								<h4>Commercial Sales</h4>
-							</div>
-						</div>
-					</div>
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2014/02/Ann.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Ann Zimmerman</h3>
-								<h4>Inside Commercial Sales</h4>
-							</div>
-						</div>
-					</div>
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/11/Tim-Owen-e1484939866529.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Tim Owen</h3>
-								<h4>Masonry & Stone Sales</h4>
-							</div>
-						</div>
-					</div>
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/11/2016.7.15-Mark-Sawyer-e1484939717969.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Mark Sawyer</h3>
-								<h4>Masonry & Stone Sales</h4>
-							</div>
-						</div>
-					</div>
-					<div className="col-sm-4">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2013/06/pete-kerfoot.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Peter Kerfoot</h3>
-								<h4>Masonry & Stone Sales</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			{this.state.commercialList.map((square, i)=>{
+			  if(i<this.state.numberShown)return <EmployeeSquare key={i} image={square.image} name={square.name} title={square.title} />
+			})}
 
 			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
 				<h3>Customer Support</h3>
 			</div>
-			<div className="team-members">
-				<div className="row">
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/Jessica-150x150.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Jessica Leavell</h3>
-								<h4>Purchasing Agent</h4>
-							</div>
-						</div>
-					</div>
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/Julie-Kelch-150x150.jpeg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Julie Kelch</h3>
-								<h4>Coorinator</h4>
-							</div>
-						</div>
-					</div>
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/Kristen.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Kristen Petty</h3>
-								<h4>Showroom Assistant</h4>
-							</div>
-						</div>
-					</div>
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/Scott-150x150.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Scott Noel</h3>
-								<h4>Warehouse Customer Service</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="row">
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/Rick-150x150.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Rick Zirkle</h3>
-								<h4>Warehouse Customer Service</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			{this.state.supportList.map((square, i)=>{
+			  if(i<this.state.numberShown)return <EmployeeSquare key={i} image={square.image} name={square.name} title={square.title} />
+			})}
 
 			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
 				<h3>Administration</h3>
 			</div>
-			<div className="team-members">
-				<div className="row">
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/jaquelin-150x150.png"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Jacquelin Winters</h3>
-								<h4>President</h4>
-							</div>
-						</div>
-					</div>
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/kelly-150x150.png"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Kelly Cheslyn</h3>
-								<h4>Vice President</h4>
-							</div>
-						</div>
-					</div>
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/Robyn2-150x150.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Robyn Leeman</h3>
-								<h4>Controller</h4>
-							</div>
-						</div>
-					</div>
-					<div className="col-sm-3">
-						<div className="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
-							<div className="member-image">
-								<img className="img-responsive" src={"http://www.archbricktile.com/wp-content/uploads/2012/03/mb.jpg"} alt="" />
-							</div>
-							<div className="member-info">
-								<h3>Mary Beth Spaulding</h3>
-								<h4>Director of Operations</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
+			{this.state.adminstrationList.map((square, i)=>{
+			  if(i<this.state.numberShown)return <EmployeeSquare key={i} image={square.image} name={square.name} title={square.title} />
+			})}
 			</div>
 			</section>
-
-
-
 
             </div>
 		);
