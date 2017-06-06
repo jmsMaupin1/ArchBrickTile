@@ -115,13 +115,26 @@ export default class index extends Component {
 				]}></Carousel>
 
 				<ScrollableAnchor id="products">
-					<div className="text-center" style={{
+					<div className="text-center container" style={{
 						paddingTop: "80px",
 						paddingBottom: "80px"
 					}}>
+                                                <div className="col-sm-6">
 						<h2>Product Gallery</h2>
-						<p>Check out our products</p>
+						<h5>Check out our product gallery below</h5>
+                                                <h5>(Hover over a product square to learn more)</h5>
+                                                </div>
+                                                <div className="col-sm-6">
+                                                <h3>Showroom Hours:</h3>
+                                                <h4>
+                                                        Monday – Friday 8:00 – 5:00 <br />
+                                                        Thursday Eve until 7:00 <br />
+                                                        Saturday 10:00 – 3:00 <br />
+                                                        Pick Up Monday – Friday 7:30 – 5:00
+                                                </h4>
+                                                </div>
 					</div>
+
 				</ScrollableAnchor>
 
 				<div style={{
@@ -161,10 +174,12 @@ export default class index extends Component {
         		<ScrollableAnchor id="services">
         			<div style={{
         				paddingTop: "80px",
-        				paddingBottom: "80px"
+        				paddingBottom: "80px",
+                                        paddingLeft: "40px",
+                                        paddingRight: "40px"
         			}} className="text-center">
         				<h2>Our Services</h2>
-        				<p>As the owner of a 45 year old distributorship, we are proud to have evolved from a brick distributorship to a specialty building materials center specializing in foreign and domestic hardwood, brick, stone, and paving exteriors, porcelain, glass, metal, and decorative tiles and an extensive offering of natural stone flooring, mosaic and architectural moldings and features. With my sister, Kelly, and my daughter, Robyn, by my side, we are devoted to introducing unique and innovative materials to our marketplace and providing our clients, both commercial and residential, the means to achieve their design solutions and dreams. Our selections range from domestic brick, stones, and Porcelains to custom fireplaces, mosaic designs, glass tiles and panels, and exotic hardwoods. Through our infinite resources, we can find unequaled products and help you in your design and solution process. </p>
+        				<h4>As the owner of a 45 year old distributorship, we are proud to have evolved from a brick distributorship to a specialty building materials center specializing in foreign and domestic hardwood, brick, stone, and paving exteriors, porcelain, glass, metal, and decorative tiles and an extensive offering of natural stone flooring, mosaic and architectural moldings and features. With my sister, Kelly, and my daughter, Robyn, by my side, we are devoted to introducing unique and innovative materials to our marketplace and providing our clients, both commercial and residential, the means to achieve their design solutions and dreams. Our selections range from domestic brick, stones, and Porcelains to custom fireplaces, mosaic designs, glass tiles and panels, and exotic hardwoods. Through our infinite resources, we can find unequaled products and help you in your design and solution process. </h4>
         			</div>
         		</ScrollableAnchor>
         		<div style={{
