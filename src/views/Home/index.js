@@ -142,9 +142,14 @@ export default class index extends Component {
 					maxHeight: "6000px",
 					overflow: "hidden"
 				}}>
-					{this.state.galleryList.map((square, i)=>{
-	          			if(i<this.state.numberShown)return <GallerySquare key={i} image={square.image} title={square.title} subtext={square.subtext}/>
-	        		})}
+  					{
+              this.state.galleryList.map((square, i)=>{
+                if(i<this.state.numberShown)
+                  return <GallerySquare key={i} image={square.image} title={square.title} subtext={square.subtext}/>
+                else
+                  return null;
+  	          })
+            }
         		</div>
 
         		<div className="text-center" style={{

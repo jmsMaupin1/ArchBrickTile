@@ -127,34 +127,23 @@ export default class About extends Component {
 			numberShown: 6
 		}
 	}
-	changeAmountShown(){
-      this.setState((state, props) => {
-        return {
-          numberShown: state.numberShown > 6 ? 6 : state.suppliersList.length,
-          showButtonText: state.showButtonText==="Show Fewer"? "Show More" : "Show Fewer"
-        }
-      });
-    }
 
-    loadMore(){
-      //TODO: change buton to loadFewer
-      this.setState((state, props) => {
-        return {
-          numberShown: state.suppliersList.length,
-          showButtonText: "Show Fewer"
-        }
-      });
-    }
+	renderSquares(key) {
+		var list = this.state[key];
+		var squares = [];
+		list.forEach((square, i) => {
+			squares.push(<EmployeeSquare 
+				key={i} 
+				image={square.image} 
+				name={square.name} 
+				title={square.title} 
+			/>)
+		})
 
-    loadFewer(){
-      //TODO: change button to loadMore
-      this.setState((state, props) => {
-        return {
-          numberShown: 8,
-          showButtonText: "Show More"
-        }
-      });
-    }
+		return squares;
+	}
+
+
 	render() {
 		return (
 			<div>
@@ -174,35 +163,22 @@ export default class About extends Component {
 			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
 				<h3>Residential Sales Team</h3>
 			</div>
-			{this.state.residentialList.map((square, i)=>{
-			  if(i<this.state.numberShown)return <EmployeeSquare key={i} image={square.image} name={square.name} title={square.title} />
-			})}
-			{/* <div className="text-center col-sm-8 col-sm-offset-2 pad-bottom">
-			  <div className="load-more">
-				<a onClick={this.changeAmountShown.bind(this)} className="btn-loadmore"><i className="fa fa-repeat"></i> {this.state.showButtonText}</a>
-			  </div>
-			</div> */}
+			{this.renderSquares('residentialList')}
 
 			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
 				<h3>Commercial Sales Team</h3>
 			</div>
-			{this.state.commercialList.map((square, i)=>{
-			  if(i<this.state.numberShown)return <EmployeeSquare key={i} image={square.image} name={square.name} title={square.title} />
-			})}
+			{this.renderSquares('commercialList')}
 
 			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
 				<h3>Customer Support</h3>
 			</div>
-			{this.state.supportList.map((square, i)=>{
-			  if(i<this.state.numberShown)return <EmployeeSquare key={i} image={square.image} name={square.name} title={square.title} />
-			})}
+			{this.renderSquares('supportList')}
 
 			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
 				<h3>Administration</h3>
 			</div>
-			{this.state.adminstrationList.map((square, i)=>{
-			  if(i<this.state.numberShown)return <EmployeeSquare key={i} image={square.image} name={square.name} title={square.title} />
-			})}
+			{this.renderSquares('adminstrationList')}
 			</div>
 			</section>
 

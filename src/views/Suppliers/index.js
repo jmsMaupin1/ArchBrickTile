@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import SuppliersSquare from '../../components/SuppliersSquare';
-import {Link} from 'react-router';
-import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import Akdo from '../../assets/suppliers/AKDO1.2.jpg';
 import Adex from '../../assets/suppliers/Adex1.1.png';
 import Arto from '../../assets/suppliers/ARTO1.1.jpg';
@@ -160,7 +159,8 @@ export default class Suppliers extends Component {
 					</ScrollableAnchor>
 
 					{this.state.suppliersList.map((square, i)=>{
-					  if(i<this.state.numberShown)return <SuppliersSquare key={i} image={square.image} title={square.title} link={square.link} subtext={square.subtext}/>
+						if(i<this.state.numberShown)return <SuppliersSquare key={i} image={square.image} title={square.title} link={square.link} subtext={square.subtext}/>
+						else return null
 					})}
 					<div className="text-center col-sm-8 col-sm-offset-2 pad-bottom">
 					  <div className="load-more">

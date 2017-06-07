@@ -24,7 +24,7 @@ export default class index extends Component {
 		return (
 			<div className={"navigation " + classes}>
 				<div className="fluid-container">
-					<Link to="/"><img className="logo" src={ABTIcon} style={{
+					<Link to="/"><img alt="ABT Logo" className="logo" src={ABTIcon} style={{
 							paddingTop: "10px",
 						}}></img></Link><span style={{
 							color: "white",
