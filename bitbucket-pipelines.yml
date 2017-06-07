@@ -10,5 +10,6 @@ pipelines:
     - step:
         script:
          - npm install
+         - npm install -g firebase
          - npm run build
          - firebase deploy --token=FIREBASE_TOKEN  
