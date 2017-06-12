@@ -71,11 +71,6 @@ export default class index extends Component {
               subtext:"We have a very wide variety of hardwood selections from which to choose, ranging from many styles, patterns, colors and species.  Let us help you today with a floor that will last a lifetime",
             },
             {
-              image:MasonryVeneers,
-              title:"Masonry Thin Veneers",
-              subtext:" Whether you are looking for a brick look, stone look, or the more modern look of panelized stone, visit our showroom to see one of the states largest selections of thin veneer materials",
-            },
-            {
               image:MetalTile,
               title:"Metal Tile",
               subtext:"We represent over 100 different Metallic Tile manufacturers. We have the largest variety of specialty accents in Indiana",
@@ -92,14 +87,14 @@ export default class index extends Component {
             }
           ],
           showButtonText:"Show More",
-          numberShown: 8
+          numberShown: 12
         }
 	}
 
 	changeAmount(){
 		this.setState((state, props) => {
       		return {
-		        numberShown: state.numberShown > 8 ? 8 : state.galleryList.length,
+		        numberShown: state.numberShown > 12 ? 12 : state.galleryList.length,
 		        showButtonText: state.showButtonText==="Show Fewer"? "Show More" : "Show Fewer"
 	      	}
     	});
@@ -130,7 +125,7 @@ export default class index extends Component {
                                                         Monday – Friday 8:00 – 5:00 <br />
                                                         Thursday Eve until 7:00 <br />
                                                         Saturday 10:00 – 3:00 <br />
-                                                        Pick Up Monday – Friday 7:30 – 5:00
+                                                        Warehouse Monday – Friday 7:30 – 4:30
                                                 </h4>
                                                 </div>
 					</div>
@@ -152,7 +147,7 @@ export default class index extends Component {
             }
         		</div>
 
-        		<div className="text-center" style={{
+        		{/* <div className="text-center" style={{
         			width: "100%",
         			height: "100%",
         			paddingTop: "40px",
@@ -170,7 +165,7 @@ export default class index extends Component {
         			onClick={this.changeAmount.bind(this)}>
         				{this.state.showButtonText}
         			</a>
-        		</div>
+        		</div> */}
 
         		<ScrollableAnchor id="about">
         			<AboutParallax />
