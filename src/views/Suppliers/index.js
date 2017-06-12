@@ -29,7 +29,6 @@ import Landmark from '../../assets/suppliers/Landmark1.1.gif';
 import MarbleSystems from '../../assets/suppliers/MarbleSystems1.1.jpg';
 import Provenza from '../../assets/suppliers/Provenza1.1.jpg';
 import SonomaTile from '../../assets/suppliers/SonomaTile1.1.jpg';
-import Stonecraft from '../../assets/suppliers/Stonecraft1.1.jpg';
 import Stonepeak from '../../assets/suppliers/Stonepeak1.1.jpg';
 import WalkerZanger from '../../assets/suppliers/WakerZanger1.1.jpg';
 
