@@ -54,7 +54,7 @@ export default class Contact extends Component {
 				  	height="400px"
 				  	frameBorder="0"
 				  	style={{"border":0}}
-					src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Fishers,+Indiana,+IN,+United+States&output=embed"></iframe>
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.9343825884293!2d-86.01891218528978!3d39.94285739224782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814b36343172669%3A0x6a0070334be48048!2sArchitectural+Brick+%26+Tile!5e0!3m2!1sen!2sus!4v1497297439931"></iframe>
     			</div>
 			</div>
 		);
