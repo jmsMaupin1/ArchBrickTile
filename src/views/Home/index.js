@@ -14,7 +14,6 @@ import ExteriorStone from '../../assets/exterior-stone.jpg';
 import GlassTile from '../../assets/glass-tile.jpg';
 import CeramicTile from '../../assets/ceramic-tile.jpg';
 import HardwoodFlooring from '../../assets/hardwood-tile.jpg';
-import MasonryVeneers from '../../assets/masonry-veneers.jpg';
 import MetalTile from '../../assets/metal-tiles.jpg';
 import StoneFloors from '../../assets/stone-floors.jpg';
 import PorcelainTile from '../../assets/porcelain-tiles.jpg';
