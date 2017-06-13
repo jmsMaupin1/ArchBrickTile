@@ -41,7 +41,7 @@
 
 	.navigation-content {
 		width: 100%;
-		background: black;
+		background: #23272C;
 	}
 
 	.navigation-content > a{
@@ -58,13 +58,11 @@
 
 	.navigation {
 		height: 80px;
-		background: black;
+		background: #23272C;
 	}
 
 	.logo {
-		font-size: 20px;
-		line-height: 80px;
-		margin-left: 20px;
+		display: none;
 	}
 }
 /*Desktop*/
@@ -74,35 +72,42 @@
 		display: inline-block;
 		text-align: center;
 		height: 100%;
-		width: 25%;
+		width: 20%;
 	}
 
 	.navigation-content {
+		width: 100%;
+		float: right;
+		background: #23272C;
+	}
+
+	.content-right {
 		width: 40%;
 		float: right;
 	}
 
 	.expanded {
 		background-size: rgba(1,1,1,1);
-		height: 80px;
+		height: 100px;
+		padding-top: 100px;
 		transition: all .5s;
 	}
 
 	.expanded a {
-		color: black;
+		color: white;
 		line-height: 81px;
 		transition: all .5s;
 	}
 
 	.contracted {
 		background: rgba(0,0,0,.9);
-		height: 40px;
+		height: 60px;
 		transition: all .5s;
 	}
 
 	.contracted a {
 		color: white;
-		line-height: 40px;
+		line-height: 60px;
 		transition: all .5s;
 	}
 

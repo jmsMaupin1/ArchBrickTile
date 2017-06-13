@@ -25,23 +25,24 @@ export default class index extends Component {
 		return (
 			<div className={"navigation " + classes}>
 				<div className="fluid-container">
-					<Link to="/"><img alt="ABT Logo" className="logo" src={ABTIcon} style={{
-							paddingTop: "10px",
-						}}></img></Link><span style={{
-							color: "white",
-							font: "100px",
-							paddingLeft: "20px",
-							paddingTop: "20px",
-						}}>(317) 842-2888</span>
-					<div className={"navigation-content"}>
-						<Link className={revealed} to="/">Home</Link>
-						<Link className={revealed} to="/about">About</Link>
-						<Link className={revealed} to="/suppliers">Suppliers</Link>
-						<Link className={revealed} to="/contact">Contact Us</Link>
+					<div className='navigation-content'>
+							<Link className={revealed} to="/">Home</Link>
+							<Link className={revealed} to="/about">About</Link>
+							<Link to="/"><img alt="ABT Logo" className="logo" src={ABTIcon}></img></Link>
+							<Link className={revealed} to="/suppliers">Suppliers</Link>
+							<Link className={revealed} to="/contact">Contact Us</Link>
+						<button className="nav-button" onClick={this.handleClick.bind(this)}><i className="fa fa-bars"/></button>
 					</div>
-					<button className="nav-button" onClick={this.handleClick.bind(this)}><i className="fa fa-bars"/></button>
 				</div>
 			</div>
 		);
 	}
 }
+
+
+// <span style={{
+// 							color: "white",
+// 							font: "100px",
+// 							paddingLeft: "20px",
+// 							paddingTop: "20px",
+// 						}}>(317) 842-2888</span>
