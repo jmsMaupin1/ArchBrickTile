@@ -15,6 +15,10 @@ export default class index extends Component {
               <div className="entry-content">
                 <p>{this.props.subtext}</p>
               </div>
+              <div>
+                  <h2></h2>
+              </div>
+
             </div>
         )
     }

@@ -89,7 +89,7 @@
 	.expanded {
 		background-size: rgba(1,1,1,1);
 		height: 100px;
-		padding-top: 100px;
+		padding-top: 35px;
 		transition: all .5s;
 	}
 

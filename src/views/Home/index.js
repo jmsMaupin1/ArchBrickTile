@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Carousel from '../../components/Carousel';
 import GallerySquare from '../../components/GallerySquare';
 import AboutParallax from '../../components/AboutParallax';
-import ServiceSquare from '../../components/ServiceSquare';
+import SocialMedia from '../../components/SocialMedia';
 import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
 
 import BrickProduct from '../../assets/brick-product.jpg';
@@ -181,10 +181,23 @@ export default class index extends Component {
         				<h4>As the owner of a 45 year old distributorship, we are proud to have evolved from a brick distributorship to a specialty building materials center specializing in foreign and domestic hardwood, brick, stone, and paving exteriors, porcelain, glass, metal, and decorative tiles and an extensive offering of natural stone flooring, mosaic and architectural moldings and features. With my sister, Kelly, and my daughter, Robyn, by my side, we are devoted to introducing unique and innovative materials to our marketplace and providing our clients, both commercial and residential, the means to achieve their design solutions and dreams. Our selections range from domestic brick, stones, and Porcelains to custom fireplaces, mosaic designs, glass tiles and panels, and exotic hardwoods. Through our infinite resources, we can find unequaled products and help you in your design and solution process. </h4>
         			</div>
         		</ScrollableAnchor>
-        		<div style={{
-        			height: "450px"
-        		}}>
-      			<ServiceSquare
+
+               {/* <ScrollableAnchor id="facebook">
+
+               <div className="col-lg-12 offset-6" style={{
+
+                    paddingTop: "80px",
+                    paddingBottom: "80px",
+                                   paddingLeft: "40px",
+                                   paddingRight: "40px"
+               }}>
+               <div className="fb-page" data-href="https://www.facebook.com/archbricktile/" data-tabs="timeline" data-width="500" data-small-header="false"  data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/archbricktile/" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/archbricktile/">Architectural Brick and Tile</a></blockquote></div>
+
+               </div>
+
+               </ScrollableAnchor> */}
+               <SocialMedia />
+      			{/* <ServiceSquare
       				icon="fa-product-hunt"
       				service="Residential"
       				subtext="Create your own special environment around your personal lifestyle. Step out of the box and mix elements like stone and glass mosaics accented with mirror pieces to update your bathroom or kitchen for a touch of sophistication."
@@ -200,8 +213,7 @@ export default class index extends Component {
       				icon="fa-product-hunt"
       				service="Exterior"
       				subtext="Want to add some usable square footage to your home the easy way? Try adding an outdoor “living room” complete with brick or flagstone pavers and a stacked stone fireplace and kitchen area."
-      			/>
-        		</div>
+      			/> */}
 			</div>
 		);
 	}
