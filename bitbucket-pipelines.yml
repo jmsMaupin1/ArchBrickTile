@@ -6,6 +6,14 @@
 image: node:6.9.4
 
 pipelines:
+  custom:
+    deploy:
+      - step:
+        script:
+          - npm install
+          - npm install -g firebase-tools
+          - npm run build
+          - firebase deploy --token=$FIREBASE_TOKEN
   default:
     - step:
         script:
