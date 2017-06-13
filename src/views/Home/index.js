@@ -18,6 +18,8 @@ import MetalTile from '../../assets/metal-tiles.jpg';
 import StoneFloors from '../../assets/stone-floors.jpg';
 import PorcelainTile from '../../assets/porcelain-tiles.jpg';
 
+import styles from './homeStyles.js'
+
 export default class index extends Component {
 	constructor(props){
 		super(props);
@@ -109,10 +111,7 @@ export default class index extends Component {
 				]}></Carousel>
 
 				<ScrollableAnchor id="products">
-					<div className="text-center container" style={{
-						paddingTop: "80px",
-						paddingBottom: "80px"
-					}}>
+					<div className="text-center container" style={styles.galleryHeader}>
             <div className="col-sm-6">
   						<h2>Product Gallery</h2>
   						<h5>
@@ -134,11 +133,7 @@ export default class index extends Component {
 
 				</ScrollableAnchor>
 
-				<div style={{
-					width: "100%",
-					maxHeight: "6000px",
-					overflow: "hidden"
-				}}>
+				<div style={styles.gallery}>
   					{
               this.state.galleryList.map((square, i)=>{
                 if(i<this.state.numberShown)
@@ -154,7 +149,7 @@ export default class index extends Component {
         		</ScrollableAnchor>
 
         		<ScrollableAnchor id="services">
-        			<div style={{padding: "80px 40px"}} className="text-center">
+        			<div style={styles.servicesHeader} className="text-center">
         				<h2>Our Services</h2>
         				<h4>As the owner of a 45 year old distributorship, we are proud to have evolved from a brick distributorship to a specialty building materials center specializing in foreign and domestic hardwood, brick, stone, and paving exteriors, porcelain, glass, metal, and decorative tiles and an extensive offering of natural stone flooring, mosaic and architectural moldings and features. With my sister, Kelly, and my daughter, Robyn, by my side, we are devoted to introducing unique and innovative materials to our marketplace and providing our clients, both commercial and residential, the means to achieve their design solutions and dreams. Our selections range from domestic brick, stones, and Porcelains to custom fireplaces, mosaic designs, glass tiles and panels, and exotic hardwoods. Through our infinite resources, we can find unequaled products and help you in your design and solution process. </h4>
         			</div>
