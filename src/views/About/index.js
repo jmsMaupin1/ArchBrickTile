@@ -159,7 +159,6 @@ export default class About extends Component {
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/yKLstVY15Yo" frameborder="0" allowfullscreen></iframe>
                     </div>
 				</div>
-
 			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
 				<h3>Residential Sales Team</h3>
 			</div>
