@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SuppliersSquare from '../../components/SuppliersSquare';
-import ScrollableAnchor from 'react-scrollable-anchor';
 import Akdo from '../../assets/suppliers/AKDO1.2.jpg';
 import Adex from '../../assets/suppliers/Adex1.1.png';
 import Apavisa from '../../assets/suppliers/Apavisa.jpg';
@@ -229,28 +228,27 @@ export default class Suppliers extends Component {
 	render() {
 		return (
 			<div>
-			<section id="blog">
+			<section id="blog" style={{paddingTop: "200px"}}>
 				<div className="container">
 
-					<ScrollableAnchor id="suppliers">
-					  <div className="heading-home">
-						<div className="text-center col-sm-8 col-sm-offset-2">
-						  <h2>Suppliers</h2>
-						  <p>We have combed the industry to find the best products for you. Our selectively chosen suppliers offer a range of products to ensure we have what you need to make your space impactful and memorable.</p>
-						</div>
-					  </div>
-					</ScrollableAnchor>
+				<div className="heading-home">
+					<div className="text-center col-sm-8 col-sm-offset-2">
+					  <h2>Suppliers</h2>
+					  <p>We have combed the industry to find the best products for you. Our selectively chosen suppliers offer a range of products to ensure we have what you need to make your space impactful and memorable.</p>
+					</div>
+				</div>
 
-					{this.state.suppliersList.map((square, i)=>{
-						if(i<this.state.numberShown)return <SuppliersSquare key={i} image={square.image} title={square.title} link={square.link} subtext={square.subtext}/>
-						else return null
-					})}
-					<div className="text-center col-sm-8 col-sm-offset-2 pad-bottom">
-					  <div className="load-more">
-						<a onClick={this.changeAmountShown.bind(this)} className="btn-loadmore"><i className="fa fa-repeat"></i> {this.state.showButtonText}</a>
-					  </div>
-					</div>
-					</div>
+				{this.state.suppliersList.map((square, i)=>{
+					if(i<this.state.numberShown)return <SuppliersSquare key={i} image={square.image} title={square.title} link={square.link} subtext={square.subtext}/>
+					else return null
+				})}
+
+				<div className="text-center col-sm-8 col-sm-offset-2 pad-bottom">
+				  <div className="load-more">
+					<a onClick={this.changeAmountShown.bind(this)} className="btn-loadmore"><i className="fa fa-repeat"></i> {this.state.showButtonText}</a>
+				  </div>
+				</div>
+				</div>
 			</section>
             </div>
 		);

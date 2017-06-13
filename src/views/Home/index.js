@@ -21,7 +21,7 @@ import PorcelainTile from '../../assets/porcelain-tiles.jpg';
 export default class index extends Component {
 	constructor(props){
 		super(props);
-        configureAnchors({scrollDuration: 10000});
+        configureAnchors({scrollDuration: 1000});
         this.state = {
           galleryList : [
             {
@@ -113,20 +113,23 @@ export default class index extends Component {
 						paddingTop: "80px",
 						paddingBottom: "80px"
 					}}>
-                                                <div className="col-sm-6">
-						<h2>Product Gallery</h2>
-						<h5>Check out our product gallery below</h5>
-                                                <h5>(Hover over a product square to learn more)</h5>
-                                                </div>
-                                                <div className="col-sm-6">
-                                                <h3>Showroom Hours:</h3>
-                                                <h4>
-                                                        Monday – Friday 8:00 – 5:00 <br />
-                                                        Thursday Eve until 7:00 <br />
-                                                        Saturday 10:00 – 3:00 <br />
-                                                        Warehouse Monday – Friday 7:30 – 4:30
-                                                </h4>
-                                                </div>
+            <div className="col-sm-6">
+  						<h2>Product Gallery</h2>
+  						<h5>
+                Check out our product gallery below
+                <br/>
+                (Hover over a product square to learn more)
+              </h5>
+            </div>
+            <div className="col-sm-6">
+            <h3>Showroom Hours:</h3>
+            <h4>
+                    Monday – Friday 8:00 – 5:00 <br />
+                    Thursday Eve until 7:00 <br />
+                    Saturday 10:00 – 3:00 <br />
+                    Warehouse Monday – Friday 7:30 – 4:30
+            </h4>
+            </div>
 					</div>
 
 				</ScrollableAnchor>
@@ -144,76 +147,19 @@ export default class index extends Component {
                   return null;
   	          })
             }
-        		</div>
-
-        		{/* <div className="text-center" style={{
-        			width: "100%",
-        			height: "100%",
-        			paddingTop: "40px",
-        			paddingBottom: "40px"
-        		}}>
-        			<a style={{
-        				cursor: "pointer",
-        				border: "1px solid grey",
-        				color: "#666",
-        				fontSize: "14px",
-        				fontWeight: "600",
-        				padding: "15px 125px",
-        				textTransform: "uppercase"
-        			}}
-        			onClick={this.changeAmount.bind(this)}>
-        				{this.state.showButtonText}
-        			</a>
-        		</div> */}
+        </div>
 
         		<ScrollableAnchor id="about">
         			<AboutParallax />
         		</ScrollableAnchor>
 
         		<ScrollableAnchor id="services">
-        			<div style={{
-        				paddingTop: "80px",
-        				paddingBottom: "80px",
-                                        paddingLeft: "40px",
-                                        paddingRight: "40px"
-        			}} className="text-center">
+        			<div style={{padding: "80px 40px"}} className="text-center">
         				<h2>Our Services</h2>
         				<h4>As the owner of a 45 year old distributorship, we are proud to have evolved from a brick distributorship to a specialty building materials center specializing in foreign and domestic hardwood, brick, stone, and paving exteriors, porcelain, glass, metal, and decorative tiles and an extensive offering of natural stone flooring, mosaic and architectural moldings and features. With my sister, Kelly, and my daughter, Robyn, by my side, we are devoted to introducing unique and innovative materials to our marketplace and providing our clients, both commercial and residential, the means to achieve their design solutions and dreams. Our selections range from domestic brick, stones, and Porcelains to custom fireplaces, mosaic designs, glass tiles and panels, and exotic hardwoods. Through our infinite resources, we can find unequaled products and help you in your design and solution process. </h4>
         			</div>
         		</ScrollableAnchor>
-
-               {/* <ScrollableAnchor id="facebook">
-
-               <div className="col-lg-12 offset-6" style={{
-
-                    paddingTop: "80px",
-                    paddingBottom: "80px",
-                                   paddingLeft: "40px",
-                                   paddingRight: "40px"
-               }}>
-               <div className="fb-page" data-href="https://www.facebook.com/archbricktile/" data-tabs="timeline" data-width="500" data-small-header="false"  data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/archbricktile/" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/archbricktile/">Architectural Brick and Tile</a></blockquote></div>
-
-               </div>
-
-               </ScrollableAnchor> */}
-               <SocialMedia />
-      			{/* <ServiceSquare
-      				icon="fa-product-hunt"
-      				service="Residential"
-      				subtext="Create your own special environment around your personal lifestyle. Step out of the box and mix elements like stone and glass mosaics accented with mirror pieces to update your bathroom or kitchen for a touch of sophistication."
-      			/>
-
-      			<ServiceSquare
-      				icon="fa-product-hunt"
-      				service="Commercial"
-      				subtext="For your commercial project, think BIG — Check out our extensive selection of large format porcelain and natural stones for your walls and floors, a contemporary luxurious choice!"
-      			/>
-
-      			<ServiceSquare
-      				icon="fa-product-hunt"
-      				service="Exterior"
-      				subtext="Want to add some usable square footage to your home the easy way? Try adding an outdoor “living room” complete with brick or flagstone pavers and a stacked stone fireplace and kitchen area."
-      			/> */}
+            <SocialMedia />
 			</div>
 		);
 	}
