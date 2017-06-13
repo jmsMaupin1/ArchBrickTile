@@ -148,7 +148,7 @@ export default class About extends Component {
 		return (
 			<div>
 
-			<section id="team">
+			<section id="team" style={{paddingTop: "200px"}}>
 			<div className="container">
 				<div className="row aboutTeam">
 					<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
