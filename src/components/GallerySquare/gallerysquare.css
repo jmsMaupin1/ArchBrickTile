@@ -37,7 +37,8 @@
 
 .square-overview .square-expand {
   margin-top: -500px;
-    margin-left: -500px;
+  margin-left: -500px;
+  cursor: pointer;
 }
 
 .square-lightbox:hover .square-lightbox-image {

@@ -5,7 +5,7 @@ import './header.css';
 import ABTIcon from '../../assets/abt-icon2.png';
 
 
-export default class index extends Component {
+export default class Header extends Component {
 	constructor(props) {
 		super(props);
 		this.state={

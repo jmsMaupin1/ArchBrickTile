@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './suppliersquare.css';
 
 
-export default class index extends Component {
+export default class SupplierSquare extends Component {
     render() {
         return (
             <div className="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">

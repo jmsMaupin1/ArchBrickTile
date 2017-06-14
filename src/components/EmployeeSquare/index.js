@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './employeesquare.css';
 
 
-export default class index extends Component {
+export default class EmployeeSquare extends Component {
     render() {
         return (
             <div className="col-sm-3">
