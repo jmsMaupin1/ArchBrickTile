@@ -23,7 +23,8 @@ var style = {
 	},
 
   raised: {
-    height: 150
+    height: 150,
+    lineHeight: 6    
   },
 
   lowered: {
@@ -59,18 +60,18 @@ class ProductSquare extends Component {
   
 	render() {
 		return (
-			<a 
+			<a
+      target='_blank'
+      rel='noopener noreferer'
       href={this.props.link} 
       className='col-lg-3' 
       style={style.square}
       onMouseEnter={this.onMouserEnter.bind(this)}
       onMouseLeave={this.onMouseLeave.bind(this)}>
-        <div>
-          <div style={[style.overlay, this.state.raise?style.raised : style.lowered]}>
-          	{this.props.text}
-          </div>
-          <img alt='' src={this.props.image} className='img-responsive text-center'/>
+        <div style={[style.overlay, this.state.raise?style.raised : style.lowered]}>
+        	{this.props.text}
         </div>
+        <img alt='' src={this.props.image} className='img-responsive text-center'/>
       </a> 
 		);
 	}

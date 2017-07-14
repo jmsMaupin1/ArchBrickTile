@@ -59,11 +59,11 @@ export default class index extends Component {
         <div className='fluid-container' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'center'}}>
           <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
             <div className='help-block' />
-            <ProductSquare image={instagram} text='Instagram'/>
+            <ProductSquare link='https://www.instagram.com/archbricktile/' image={instagram} text='Instagram'/>
             <div className='help-block' />
-            <ProductSquare image={facebook} text='Facebook'/>
+            <ProductSquare link='https://www.facebook.com/archbricktile/' image={facebook} text='Facebook'/>
             <div className='help-block' />
-            <ProductSquare image={houzz} text='Houzz'/>
+            <ProductSquare link='https://www.houzz.com/pro/archbrick/architectural-brick-and-tile-inc' image={houzz} text='Houzz'/>
           </div>
 
           <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
