@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 export default class SocialMedia extends Component {
   render() {
     return (
-      <div className='text-center' style={{paddingBottom: "80px"}}>
+      <div className='text-center' style={{paddingBottom: 80, paddingTop: 50}}>
           <div className="fb-page" 
                data-href="https://www.facebook.com/archbricktile/" 
                data-tabs="timeline" data-width="100000000000000px" 

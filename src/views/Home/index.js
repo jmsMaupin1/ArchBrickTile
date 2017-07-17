@@ -3,6 +3,7 @@ import Carousel from '../../components/Carousel';
 import ProductSquare from '../../components/ProductSquare';
 import AboutParallax from '../../components/AboutParallax';
 import SocialMedia from '../../components/SocialMedia';
+import Certifications from '../../components/Certifications';
 import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
 
 import facebook from '../../assets/fb-pic.jpg';
@@ -34,71 +35,72 @@ export default class index extends Component {
 				]}/>
 
 				<ScrollableAnchor id="products">
-					<div className="text-center container" style={styles.galleryHeader}>
+			    <div className="text-center container" style={styles.galleryHeader}>
             <div className="col-sm-6">
-  						<h2>Product Gallery</h2>
-  						<h5>
+    					<h2>Product Gallery</h2>
+    					<h5>
                 Check out our product gallery below
                 <br/>
                 (Hover over a product square to learn more)
               </h5>
             </div>
             <div className="col-sm-6">
-            <h3>Showroom Hours:</h3>
-            <h4>
-                    Monday – Friday 8:00 – 5:00 <br />
-                    Thursday Eve until 7:00 <br />
-                    Saturday 10:00 – 3:00 <br />
-                    Warehouse Monday – Friday 7:30 – 4:30
-            </h4>
+              <h3>Showroom Hours:</h3>
+              <h4>
+                Monday – Friday 8:00 – 5:00 <br />
+                Thursday Eve until 7:00 <br />
+                Saturday 10:00 – 3:00 <br />
+                Warehouse Monday – Friday 7:30 – 4:30
+              </h4>
             </div>
-					</div>
+          </div>
+        </ScrollableAnchor>
 
-				</ScrollableAnchor>
+          <div className='fluid-container' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'center', paddingBottom: 50}}>
+            <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
+              <div className='help-block' />
+              <ProductSquare link='https://www.instagram.com/archbricktile/' image={instagram} text='Instagram'/>
+              <div className='help-block' />
+              <ProductSquare link='https://www.facebook.com/archbricktile/' image={facebook} text='Facebook'/>
+              <div className='help-block' />
+              <ProductSquare link='https://www.houzz.com/pro/archbrick/architectural-brick-and-tile-inc' image={houzz} text='Houzz'/>
+            </div>
 
-        <div className='fluid-container' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'center'}}>
-          <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
-            <div className='help-block' />
-            <ProductSquare link='https://www.instagram.com/archbricktile/' image={instagram} text='Instagram'/>
-            <div className='help-block' />
-            <ProductSquare link='https://www.facebook.com/archbricktile/' image={facebook} text='Facebook'/>
-            <div className='help-block' />
-            <ProductSquare link='https://www.houzz.com/pro/archbrick/architectural-brick-and-tile-inc' image={houzz} text='Houzz'/>
+            <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
+              <div className='help-block' />
+              <ProductSquare image={residential} text='Residential Projects'/>
+              <div className='help-block' />
+              <ProductSquare image={commercial} text='Commercial Projects'/>
+              <div className='help-block' />
+              <ProductSquare image={kitchen} text='Kitchen Products'/>
+            </div>
+
+            <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
+              <div className='help-block' />
+              <ProductSquare image={BrickProduct} text='Masonry / Brick'/>
+              <div className='help-block' />
+              <ProductSquare image={exterior} text='Exteriors'/>
+              <div className='help-block' />
+              <ProductSquare image={kitchen} text='Kitchen Products'/>
+            </div>
+
+            <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
+              <div className='help-block' />
+              <ProductSquare image={bathroom} text='Bathroom'/>
+              <div className='help-block' />
+              <ProductSquare image={tile} text='Tile'/>
+              <div className='help-block' />
+              <ProductSquare image={stone} text='Natural Stone'/>
+            </div>
           </div>
 
-          <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
-            <div className='help-block' />
-            <ProductSquare image={residential} text='Residential Projects'/>
-            <div className='help-block' />
-            <ProductSquare image={commercial} text='Commercial Projects'/>
-            <div className='help-block' />
-            <ProductSquare image={kitchen} text='Kitchen Products'/>
-          </div>
+  		    <ScrollableAnchor id="about">
+            <AboutParallax />
+  		    </ScrollableAnchor>
 
-          <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
-            <div className='help-block' />
-            <ProductSquare image={BrickProduct} text='Masonry / Brick'/>
-            <div className='help-block' />
-            <ProductSquare image={exterior} text='Exteriors'/>
-            <div className='help-block' />
-            <ProductSquare image={kitchen} text='Kitchen Products'/>
-          </div>
-
-          <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
-            <div className='help-block' />
-            <ProductSquare image={bathroom} text='Bathroom'/>
-            <div className='help-block' />
-            <ProductSquare image={tile} text='Tile'/>
-            <div className='help-block' />
-            <ProductSquare image={stone} text='Natural Stone'/>
-          </div>
-        </div>
-
-    		<ScrollableAnchor id="about">
-    			<AboutParallax />
-    		</ScrollableAnchor>
-        <SocialMedia />
-			</div>
+            <Certifications />
+            <SocialMedia />
+		  </div>
 		);
 	}
 }
