@@ -7,7 +7,7 @@ import WendyRichmond from '../../assets/team/Wendy-Richmond1.1.jpg';
 import JoanneHolman from '../../assets/team/Joanne-Holman1.1.jpg';
 import MaryAnnLucas from '../../assets/team/Mary-Ann-Lucas.jpg';
 import AnnZimmerman from '../../assets/team/Ann-Zimmerman.jpg';
-import TimOwen from '../../assets/team/Tim-Owen1.1.jpg';
+import TimOwen from '../../assets/team/Tim-Owen-test.jpg';
 import PeterKerfoot from '../../assets/team/Pete-Kerfoot.jpg';
 import MarkSawyer from '../../assets/team/Mark-Sawyer1.1.jpg';
 import JessicaLeavell from '../../assets/team/Jessica-Leavell1.1.jpg';
