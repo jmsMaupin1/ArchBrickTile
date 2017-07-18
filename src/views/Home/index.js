@@ -8,6 +8,7 @@ import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
 
 import facebook from '../../assets/fb-pic.jpg';
 import instagram from '../../assets/instapic.jpg';
+import fireplace from '../../assets/fireplace.jpg';
 import stone from '../../assets/stone.jpg';
 import tile from '../../assets/tile.jpg';
 import exterior from '../../assets/exterior.jpg';
@@ -72,7 +73,7 @@ export default class index extends Component {
               <div className='help-block' />
               <ProductSquare image={commercial} text='Commercial Projects'/>
               <div className='help-block' />
-              <ProductSquare image={kitchen} text='Kitchen Products'/>
+              <ProductSquare image={fireplace} text='Fireplace'/>
             </div>
 
             <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
@@ -81,7 +82,7 @@ export default class index extends Component {
               <div className='help-block' />
               <ProductSquare image={exterior} text='Exteriors'/>
               <div className='help-block' />
-              <ProductSquare image={kitchen} text='Kitchen Products'/>
+              <ProductSquare link="https://www.houzz.com/projects/680712/kitchens" image={kitchen} text='Kitchen Products'/>
             </div>
 
             <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
