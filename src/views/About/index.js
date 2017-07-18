@@ -29,34 +29,54 @@ export default class About extends Component {
 				{
 					image: JenniferHobbs,
 					name: "Jennifer Hobbs",
-					title: "Residential Sales"
+					title: "Residential Designer"
 				},
 				{
 					image: LaurenRiley,
 					name: "Lauren Riley",
-					title: "Residential Sales"
+					title: "Residential Designer"
 				},
 				{
 					image: WendyRichmond,
 					name: "Wendy Richmond",
-					title: "Residential Sales"
+					title: "Residential Designer"
 				},
 				{
 					image: JoanneHolman,
 					name: "Joanne Holman",
-					title: "Residential Sales"
+					title: "Residential Designer"
 				},
+				{
+						image: MaryAnnLucas,
+						name: "Mary Ann Lucas",
+						title: "Commercial Tile Designer"
+					},
+					{
+							image: AnnZimmerman,
+							name: "Ann Zimmerman",
+							title: "Commercial Tile / Customer Service"
+						},
+						{
+							image: JessicaLeavell,
+							name: "Jessica Leavell",
+							title: "Purchasing Agent / Customer Service "
+						},
+						{
+							image: KristenPetty,
+							name: "Kristen Petty",
+							title: "Showroom Merchandiser / Customer Service"
+						},
 			],
 			commercialList: [
 				{
-					image: MaryAnnLucas,
-					name: "Mary Ann Lucas",
-					title: "Commercial Sales"
+					image: JulieKelch,
+					name: "Julie Kelch",
+					title: "Masonry Coordinator / Customer Service"
 				},
 				{
-					image: AnnZimmerman,
-					name: "Ann Zimmerman",
-					title: "Inside Commercial Sales"
+					image: PeterKerfoot,
+					name: "Peter Kerfoot",
+					title: "Masonry & Stone Sales"
 				},
 				{
 					image: TimOwen,
@@ -68,28 +88,12 @@ export default class About extends Component {
 					name: "Mark Sawyer",
 					title: "Masonry & Stone Sales"
 				},
-				{
-					image: PeterKerfoot,
-					name: "Peter Kerfoot",
-					title: "Masonry & Stone Sales"
-				},
+
 			],
 			supportList: [
-				{
-					image: JessicaLeavell,
-					name: "Jessica Leavell",
-					title: "Customer Service Purchasing Agent"
-				},
-				{
-					image: JulieKelch,
-					name: "Julie Kelch",
-					title: "Coordinator"
-				},
-				{
-					image: KristenPetty,
-					name: "Kristen Petty",
-					title: "Showroom Assistant"
-				},
+
+
+
 				{
 					image: RickZirkle,
 					name: "Rick Zirkle",
@@ -132,11 +136,11 @@ export default class About extends Component {
 		var list = this.state[key];
 		var squares = [];
 		list.forEach((square, i) => {
-			squares.push(<EmployeeSquare 
-				key={i} 
-				image={square.image} 
-				name={square.name} 
-				title={square.title} 
+			squares.push(<EmployeeSquare
+				key={i}
+				image={square.image}
+				name={square.name}
+				title={square.title}
 			/>)
 		})
 
@@ -152,32 +156,33 @@ export default class About extends Component {
 			<div className="container">
 				<div className="row aboutTeam">
 					<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-						<h2>The Team</h2>
-						<p>Architectural Brick & Tile has almost 50 years of experience making dreams come true. We offer personal service, boundless knowledge and exclusive product lines. This is not your ordinary Tile Dealer. We began in the brick business and have not forgotten our roots, while expanding our product lines to include manufactured stone products, thin brick and hardscapes.</p>
+						{/* <h2>The Team</h2> */}
+						<p>We are proud to have evolved from a brick distributorship in 1967 to a specialty building materials center specializing in foreign and domestic materials to complete your space. With my sister, Kelly, and my daughter, Robyn, by my side, we are devoted to introducing unique and innovative materials to our marketplace and providing our clients, both commercial and residential, the means to achieve their design solutions and dreams. I am proud of my most talented staff of designers. They are handpicked to give you, our cherished partners, the best possible service and award winning design concepts. My designers best sales tool is our exceptional showroom. I, personally, invite you to be a guest in our showroom located off East106th Street exit from I69 and experience the best that valuable talent, energy, and education have to offer. <br /> <br />- Jacquelin Winter<em> President</em> , Architectural Brick and Tile
+</p>
 					</div>
-                    <div className="text-center col-sm-4 col-sm-offset-3 wow fadeInUp">
+                    {/* <div className="text-center col-sm-4 col-sm-offset-3 wow fadeInUp">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/yKLstVY15Yo" frameborder="0" allowfullscreen></iframe>
-                    </div>
+                    </div> */}
 				</div>
 			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-				<h3>Residential Sales Team</h3>
+				<h1>Tile</h1>
 			</div>
 			{this.renderSquares('residentialList')}
 
 			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-				<h3>Commercial Sales Team</h3>
+				<h1>Masonry</h1>
 			</div>
 			{this.renderSquares('commercialList')}
 
-			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+			{/* <div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
 				<h3>Customer Support</h3>
 			</div>
-			{this.renderSquares('supportList')}
+			{this.renderSquares('supportList')} */}
 
-			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+			{/* <div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
 				<h3>Administration</h3>
 			</div>
-			{this.renderSquares('adminstrationList')}
+			{this.renderSquares('adminstrationList')} */}
 			</div>
 			</section>
 
