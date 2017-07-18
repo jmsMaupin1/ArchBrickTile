@@ -40,7 +40,7 @@
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	height: 59vh;
+	height: 50vh;
 }
 
 .contact-form > div {
@@ -106,7 +106,7 @@
 	.social {
 		float: left;
 		width: 50%;
-		height: 60vh;
+		height: 45vh;
 	}
 
 	.social > div {
@@ -117,6 +117,6 @@
 	.contact-form {
 		float: right;
 		width: 50%;
-		height: 60vh;
+		height: 45vh;
 	}
 }
