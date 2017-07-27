@@ -40,32 +40,7 @@ export default class About extends Component {
 					image: WendyRichmond,
 					name: "Wendy Richmond",
 					title: "Residential Designer"
-				},
-				{
-					image: JoanneHolman,
-					name: "Joanne Holman",
-					title: "Residential Designer"
-				},
-				{
-						image: MaryAnnLucas,
-						name: "Mary Ann Lucas",
-						title: "Commercial Tile Designer"
-					},
-					{
-							image: AnnZimmerman,
-							name: "Ann Zimmerman",
-							title: "Commercial Tile / Customer Service"
-						},
-						{
-							image: JessicaLeavell,
-							name: "Jessica Leavell",
-							title: "Purchasing Agent / Customer Service "
-						},
-						{
-							image: KristenPetty,
-							name: "Kristen Petty",
-							title: "Showroom Merchandiser / Customer Service"
-						},
+				}
 			],
 			commercialList: [
 				{
@@ -150,43 +125,48 @@ export default class About extends Component {
 
 	render() {
 		return (
-			<div>
-
 			<section id="team" style={{paddingTop: "200px"}}>
-			<div className="container">
-				<div className="row aboutTeam">
-					<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-						{/* <h2>The Team</h2> */}
-						<p>We are proud to have evolved from a brick distributorship in 1967 to a specialty building materials center specializing in foreign and domestic materials to complete your space. With my sister, Kelly, and my daughter, Robyn, by my side, we are devoted to introducing unique and innovative materials to our marketplace and providing our clients, both commercial and residential, the means to achieve their design solutions and dreams. I am proud of my most talented staff of designers. They are handpicked to give you, our cherished partners, the best possible service and award winning design concepts. My designers best sales tool is our exceptional showroom. I, personally, invite you to be a guest in our showroom located off East106th Street exit from I69 and experience the best that valuable talent, energy, and education have to offer. <br /> <br />- Jacquelin Winter<em> President</em> , Architectural Brick and Tile
-</p>
+				<div className="container">
+					<div className="row aboutTeam">
+						<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+						<p>We are proud to have evolved from a brick 
+							distributorship in 1967 to a specialty building 
+							materials center specializing in foreign and 
+							domestic materials to complete your space. 
+							With my sister, Kelly, and my daughter, Robyn, 
+							by my side, we are devoted to introducing unique 
+							and innovative materials to our marketplace and 
+							providing our clients, both commercial and 
+							residential, the means to achieve their design 
+							solutions and dreams. I am proud of my most 
+							talented staff of designers. They are handpicked 
+							to give you, our cherished partners, the best possible 
+							service and award winning design concepts. My designers 
+							best sales tool is our exceptional showroom. I, personally, 
+							invite you to be a guest in our showroom located off East
+							106th Street exit from I69 and experience the best that 
+							valuable talent, energy, and education have to offer. 
+							<br /> <br />- Jacquelin Winter<em> President</em> , 
+							Architectural Brick and Tile
+						</p>
 					</div>
-                    {/* <div className="text-center col-sm-4 col-sm-offset-3 wow fadeInUp">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yKLstVY15Yo" frameborder="0" allowfullscreen></iframe>
-                    </div> */}
 				</div>
-			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-				<h1>Tile</h1>
-			</div>
-			{this.renderSquares('residentialList')}
 
-			<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-				<h1>Masonry</h1>
-			</div>
-			{this.renderSquares('commercialList')}
+				<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+					<h1>Tile</h1>
+				</div>
 
-			{/* <div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-				<h3>Customer Support</h3>
-			</div>
-			{this.renderSquares('supportList')} */}
+				<div style={{width: '100%', display: 'flex', 
+				justifyContent: 'space-between'}}>
+					{this.renderSquares('residentialList')}
+				</div>
 
-			{/* <div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-				<h3>Administration</h3>
-			</div>
-			{this.renderSquares('adminstrationList')} */}
-			</div>
+				<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+					<h1>Masonry</h1>
+				</div>
+				{this.renderSquares('commercialList')}
+				</div>
 			</section>
-
-            </div>
 		);
 	}
 }
