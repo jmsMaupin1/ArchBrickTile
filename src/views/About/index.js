@@ -27,43 +27,87 @@ export default class About extends Component {
 		this.state = {
 			residentialList: [
 				{
-					image: JenniferHobbs,
+					image: RobynLeeman,
 					name: "Jennifer Hobbs",
 					title: "Residential Designer"
 				},
 				{
-					image: LaurenRiley,
-					name: "Lauren Riley",
+					image: JessicaLeavell,
+					name: "Jessica Leavell",
 					title: "Residential Designer"
 				},
 				{
-					image: WendyRichmond,
-					name: "Wendy Richmond",
+					image: KristenPetty,
+					name: "Kristen Petty",
 					title: "Residential Designer"
 				}
 			],
+			residentialList1: [
+				{
+					image: JenniferHobbs,
+					name: 'Jennifer Hobbs',
+					title: 'Residential Designer'
+				},
+				{
+					image: JoanneHolman,
+					name: 'Joanne Holman',
+					title: 'Residential Designer'
+				},
+				{
+					image: WendyRichmond,
+					name: 'Wendy Richmond',
+					title: 'Residential Designer'
+				},
+				{
+					image: LaurenRiley,
+					name: 'Lauren Riley',
+					title: 'Residential Designer'
+				}
+			],
 			commercialList: [
+				{
+					image: AnnZimmerman,
+					name: "Ann Zimmerman",
+					title: "Masonry Coordinator / Customer Service"
+				},
+
+				{
+					image: MaryAnnLucas,
+					name: "Mary Ann Lucas",
+					title: "Masonry Coordinator / Customer Service"
+				},
+
 				{
 					image: JulieKelch,
 					name: "Julie Kelch",
 					title: "Masonry Coordinator / Customer Service"
 				},
+
+			],
+			commercialList1: [
 				{
 					image: PeterKerfoot,
-					name: "Peter Kerfoot",
-					title: "Masonry & Stone Sales"
-				},
-				{
-					image: TimOwen,
-					name: "Tim Owen",
-					title: "Masonry & Stone Sales"
-				},
-				{
-					image: MarkSawyer,
-					name: "Mark Sawyer",
-					title: "Masonry & Stone Sales"
+					name: 'Peter Kerfoot',
+					title: 'Masony & Stone sales'
 				},
 
+				{
+					image: PeterKerfoot,
+					name: 'Peter Kerfoot',
+					title: 'Masony & Stone sales'
+				},
+
+				{
+					image: PeterKerfoot,
+					name: 'Peter Kerfoot',
+					title: 'Masony & Stone sales'
+				},
+
+				{
+					image: PeterKerfoot,
+					name: 'Peter Kerfoot',
+					title: 'Masony & Stone sales'
+				}
 			],
 			supportList: [
 
@@ -153,18 +197,23 @@ export default class About extends Component {
 				</div>
 
 				<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-					<h1>Tile</h1>
+					<h1>Showroom</h1>
 				</div>
 
-				<div style={{width: '100%', display: 'flex', 
-				justifyContent: 'space-between'}}>
+				<div style={{width: '100%', display: 'flex', justifyContent: 'space-around'}}>
 					{this.renderSquares('residentialList')}
 				</div>
+					{this.renderSquares('residentialList1')}
 
 				<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-					<h1>Masonry</h1>
+					<h1>Commercial / Masonry</h1>
 				</div>
-				{this.renderSquares('commercialList')}
+				
+				<div style={{width: '100%', display: 'flex', justifyContent: 'space-around'}}>
+					{this.renderSquares('commercialList')}
+				</div>
+					{this.renderSquares('commercialList1')}
+
 				</div>
 			</section>
 		);
