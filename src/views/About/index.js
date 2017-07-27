@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './about.css';
 import EmployeeSquare from '../../components/EmployeeSquare';
 import LaurenRiley from '../../assets/team/Lauren-Riley.png';
+import Fam from '../../assets/team/abt-family.jpg';
+import Todd from '../../assets/team/Todd-Howard.jpg';
 import JenniferHobbs from '../../assets/team/Jennifer-Hobbs.jpg';
 import WendyRichmond from '../../assets/team/Wendy-Richmond.jpg';
 import JoanneHolman from '../../assets/team/Joanne-Holman.jpg';
@@ -92,20 +94,20 @@ export default class About extends Component {
 				},
 
 				{
-					image: PeterKerfoot,
-					name: 'Peter Kerfoot',
+					image: Todd,
+					name: 'Todd Howard',
 					title: 'Masony & Stone sales'
 				},
 
 				{
-					image: PeterKerfoot,
-					name: 'Peter Kerfoot',
+					image: TimOwen,
+					name: 'Tim Owen',
 					title: 'Masony & Stone sales'
 				},
 
 				{
-					image: PeterKerfoot,
-					name: 'Peter Kerfoot',
+					image: MarkSawyer,
+					name: 'Mark Sawyer',
 					title: 'Masony & Stone sales'
 				}
 			],
@@ -190,6 +192,8 @@ export default class About extends Component {
 							invite you to be a guest in our showroom located off East
 							106th Street exit from I69 and experience the best that 
 							valuable talent, energy, and education have to offer. 
+							<br/><br/>
+							<img src={Fam} />
 							<br /> <br />- Jacquelin Winter<em> President</em> , 
 							Architectural Brick and Tile
 						</p>
