@@ -10,34 +10,30 @@ import FCOC from '../../assets/fcoc.png';
 export default class Certifications extends Component {
 	render() {
 		return (
-			<div className='col-lg-6 text-center' style={{
-				paddingTop: 150,
-			}}>
-				<div className='col-lg-4 col-sm-6 col-xs-6' style={{paddingTop: 50}}>
+			<div className='col-lg-12'>
+				<div className='col-lg-2 col-sm-6 col-xs-6' style={{paddingTop: 50}}>
 					<img src={NKBA} className='center-block img-responsive' alt=''/>
 				</div>
 
-				<div className='col-lg-4 col-sm-6 col-xs-6' style={{paddingTop: 50}}>
+				<div className='col-lg-2 col-sm-6 col-xs-6' style={{paddingTop: 50}}>
 					<img src={ASID} className='center-block img-responsive' alt=''/>
 				</div>
 
-				<div className='col-lg-4 col-sm-6 col-xs-6' style={{paddingTop: 50}}>
+				<div className='col-lg-2 col-sm-6 col-xs-6' style={{paddingTop: 50}}>
 					<img src={BAGI} className='center-block img-responsive' alt=''/>
 				</div>
 
-				<div className='col-lg-4 col-sm-6 col-xs-6' style={{paddingTop: 50}}>
+				<div className='col-lg-2 col-sm-6 col-xs-6' style={{paddingTop: 50}}>
 					<img src={CSI} className='center-block img-responsive' alt=''/>
 				</div>
 
-				<div className='col-lg-4 col-sm-6 col-xs-6' style={{paddingTop: 50}}>
+				<div className='col-lg-2 col-sm-6 col-xs-6' style={{paddingTop: 50}}>
 					<img src={WBE} className='center-block img-responsive' alt=''/>
 				</div>
 
-				<div className='col-lg-4 col-sm-6 col-xs-6' style={{paddingTop: 50}}>
+				<div className='col-lg-2 col-sm-6 col-xs-6' style={{paddingTop: 50}}>
 					<img src={FCOC} className='center-block img-responsive' alt=''/>
 				</div>
-
-
 			</div>
 		);
 	}

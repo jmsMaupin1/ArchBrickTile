@@ -31,7 +31,6 @@ export default class App extends Component {
 	    	<div className="App">
 		        <Header isSticky={this.state.scrollTop > 80}/>
 		        	{React.cloneElement(this.props.children, {...this.props})}
-		        <Footer />
 	      	</div>
 	  	);
 	}

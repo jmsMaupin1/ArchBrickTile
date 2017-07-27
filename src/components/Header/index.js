@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import './header.css';
 
-import ABTIcon from '../../assets/abt-icon2.png';
-
+import ABTIcon from '../../assets/abt-logo2.png';
 
 export default class Header extends Component {
 	constructor(props) {
@@ -25,12 +24,12 @@ export default class Header extends Component {
 		return (
 			<div className={"navigation " + classes}>
 				<div className="fluid-container">
-					<div className='navigation-content'>
-							<Link className={revealed} to="/">Home</Link>
-							<Link className={revealed} to="/about">About</Link>
-							<Link to="/"><img alt="ABT Logo" className="logo" src={ABTIcon}></img></Link>
-							<Link className={revealed} to="/suppliers">Suppliers</Link>
-							<Link className={revealed} to="/contact">Contact Us</Link>
+					<div className='navigation-content col-lg-12'>
+							<Link className={'col-lg-3 ' + revealed} to="/">Home</Link>
+							<Link className={'col-lg-3 ' + revealed} to="/about">About</Link>
+							<Link className={'col-lg-3 ' + revealed} to="/"><img alt="ABT Logo" className="logo" src={ABTIcon}></img></Link>
+							<Link className={'col-lg-3 ' + revealed} to="/suppliers">Suppliers</Link>
+							<Link className={'col-lg-3 ' + revealed} to="/contact">Contact Us</Link>
 						<button className="nav-button" onClick={this.handleClick.bind(this)}><i className="fa fa-bars"/></button>
 					</div>
 				</div>

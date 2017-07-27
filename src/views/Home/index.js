@@ -8,7 +8,6 @@ import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
 
 import facebook from '../../assets/fb-pic.jpg';
 import instagram from '../../assets/instapic.jpg';
-import fireplace from '../../assets/fireplace.jpg';
 import stone from '../../assets/stone.jpg';
 import tile from '../../assets/tile.jpg';
 import exterior from '../../assets/exterior.jpg';
@@ -18,7 +17,12 @@ import residential from '../../assets/residential.jpg';
 import commercial from '../../assets/commercial.jpg';
 import kitchen from '../../assets/kitchen.jpg';
 import BrickProduct from '../../assets/brick-product.jpg';
+import wood from '../../assets/wood.jpg';
 import styles from './homeStyles.js';
+
+import carousel1 from '../../assets/carousel1.jpg';
+import carousel2 from '../../assets/carousel2.jpg';
+import carousel3 from '../../assets/carousel3.jpg';
 
 export default class index extends Component {
 	constructor(props){
@@ -30,9 +34,9 @@ export default class index extends Component {
 		return (
 			<div>
 				<Carousel scrollTo="products" slides={[
-					"http://www.archbricktile.com/wp-content/gallery/living-spaces/1384_1-818x478.jpg",
-    				"http://www.archbricktile.com/wp-content/gallery/living-spaces/2011-catalog_final_full-size-soft-copy_page_041.jpg",
-    				"http://www.archbricktile.com/wp-content/gallery/living-spaces/living_horz_050.jpg"
+					carousel1,
+          carousel2,
+          carousel3
 				]}/>
 
 				<ScrollableAnchor id="products">
@@ -71,36 +75,33 @@ export default class index extends Component {
               <div className='help-block' />
               <ProductSquare image={residential} text='Residential Projects'/>
               <div className='help-block' />
-              <ProductSquare image={commercial} text='Commercial Projects'/>
+              <ProductSquare image={tile} text='Tile'/>
               <div className='help-block' />
-              <ProductSquare image={fireplace} text='Fireplace'/>
+              <ProductSquare image={commercial} text='Commercial Projects'/>
             </div>
 
             <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
               <div className='help-block' />
-              <ProductSquare image={BrickProduct} text='Masonry / Brick'/>
-              <div className='help-block' />
               <ProductSquare image={exterior} text='Exteriors'/>
               <div className='help-block' />
-              <ProductSquare link="https://www.houzz.com/projects/680712/kitchens" image={kitchen} text='Kitchen Products'/>
+              <ProductSquare image={BrickProduct} text='Masonry / Brick'/>
+              <div className='help-block' />
+              <ProductSquare link="" image={stone} text='Natural Stone'/>
             </div>
 
             <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
               <div className='help-block' />
               <ProductSquare image={bathroom} text='Bathroom'/>
               <div className='help-block' />
-              <ProductSquare image={tile} text='Tile'/>
+              <ProductSquare image={wood} text='Wood'/>
               <div className='help-block' />
-              <ProductSquare image={stone} text='Natural Stone'/>
+              <ProductSquare link="https://www.houzz.com/projects/680712/kitchens" image={kitchen} text='Kitchen'/>
             </div>
           </div>
 
   		    <ScrollableAnchor id="about">
             <AboutParallax />
   		    </ScrollableAnchor>
-
-            <Certifications />
-            <SocialMedia />
 		  </div>
 		);
 	}
