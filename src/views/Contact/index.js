@@ -5,7 +5,7 @@ export default class Contact extends Component {
 		return (
 			<div className="contact">
 				<div className="contact-banner parallax">
-					<h1>Contact Us Today!</h1>
+					
 				</div>
 				<div className="social">
 					<div>
@@ -34,6 +34,7 @@ export default class Contact extends Component {
 							 info@archbricktile.com
 						</p>
 
+						<h1>Contact Us Today!</h1>
 					</div>
 				</div>
 				<div className="contact-form">
@@ -41,7 +42,7 @@ export default class Contact extends Component {
 						<form>
 							<div className="cf-email"><input name="" placeholder="Your e-mail" title="Your e-mail" type="text" /></div>
 	                        <div className="cf-name"><input name="" placeholder="Your name" title="Your name" type="text" /></div>
-	                        <div className="cf-message"><textarea placeholder="Your massage" name="" rows="5"></textarea></div>
+	                        <div className="cf-message"><textarea placeholder="Your message" name="" rows="5"></textarea></div>
 	                        <div className="cf-submit"><button type="submit">Contact Us</button></div>
 						</form>
 					</div>

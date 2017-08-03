@@ -6,6 +6,7 @@ import SocialMedia from '../../components/SocialMedia';
 import Certifications from '../../components/Certifications';
 import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
 
+import Moose from '../../assets/Moose.jpg';
 import facebook from '../../assets/fb-pic.jpg';
 import instagram from '../../assets/instapic.jpg';
 import stone from '../../assets/stone.jpg';
@@ -45,8 +46,6 @@ export default class index extends Component {
     					<h2>Product Gallery</h2>
     					<h5>
                 Check out our product gallery below
-                <br/>
-                (Hover over a product square to learn more)
               </h5>
             </div>
             <div className="col-sm-6">
@@ -66,34 +65,34 @@ export default class index extends Component {
               <div className='help-block' />
               <ProductSquare link='https://www.instagram.com/archbricktile/' image={instagram} text='Instagram'/>
               <div className='help-block' />
-              <ProductSquare link='https://www.facebook.com/archbricktile/' image={facebook} text='Facebook'/>
+              <ProductSquare link='https://www.facebook.com/archbricktile/' image={Moose} text='Facebook'/>
               <div className='help-block' />
               <ProductSquare link='https://www.houzz.com/pro/archbrick/architectural-brick-and-tile-inc' image={houzz} text='Houzz'/>
             </div>
 
             <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
               <div className='help-block' />
-              <ProductSquare image={residential} text='Residential Projects'/>
+              <ProductSquare link="https://www.houzz.com/ideabooks/89751122/thumbs/residential-projects" image={residential} text='Residential Projects'/>
               <div className='help-block' />
-              <ProductSquare image={tile} text='Tile'/>
+              <ProductSquare link="https://www.houzz.com/ideabooks/89751112/thumbs/tile" image={tile} text='Tile'/>
               <div className='help-block' />
-              <ProductSquare image={commercial} text='Commercial Projects'/>
+              <ProductSquare link="https://www.houzz.com/ideabooks/89751102/thumbs/commercial-projects" image={commercial} text='Commercial Projects'/>
             </div>
 
             <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
               <div className='help-block' />
-              <ProductSquare image={exterior} text='Exteriors'/>
+              <ProductSquare link="https://www.houzz.com/ideabooks/89751088/thumbs/exteriors" image={exterior} text='Exteriors'/>
               <div className='help-block' />
-              <ProductSquare image={BrickProduct} text='Masonry / Brick'/>
+              <ProductSquare link="https://www.houzz.com/ideabooks/89751082/thumbs/masonry-brick" image={BrickProduct} text='Masonry / Brick'/>
               <div className='help-block' />
-              <ProductSquare link="" image={stone} text='Natural Stone'/>
+              <ProductSquare link="https://www.houzz.com/ideabooks/89751041/thumbs/natural-stone" image={stone} text='Natural Stone'/>
             </div>
 
             <div className='col-lg-11' style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', padding: 10}}>
               <div className='help-block' />
-              <ProductSquare image={bathroom} text='Bathroom'/>
+              <ProductSquare link="https://www.houzz.com/ideabooks/89751025/thumbs/bathrooms" image={bathroom} text='Bathroom'/>
               <div className='help-block' />
-              <ProductSquare image={wood} text='Wood'/>
+              <ProductSquare link="https://www.houzz.com/ideabooks/89751010/thumbs/wood" image={wood} text='Wood'/>
               <div className='help-block' />
               <ProductSquare link="https://www.houzz.com/projects/680712/kitchens" image={kitchen} text='Kitchen'/>
             </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './about.css';
 import EmployeeSquare from '../../components/EmployeeSquare';
+import Moose from '../../assets/Moose.jpg';
 import LaurenRiley from '../../assets/team/Lauren-Riley.png';
 import Fam from '../../assets/team/abt-family.jpg';
 import Todd from '../../assets/team/Todd-Howard.jpg';
@@ -29,19 +30,19 @@ export default class About extends Component {
 		this.state = {
 			residentialList: [
 				{
-					image: RobynLeeman,
-					name: "Jennifer Hobbs",
-					title: "Residential Designer"
+					image: Moose,
+					name: "Aspen (Moose)",
+					title: "Mental Healthcare professional"
 				},
 				{
 					image: JessicaLeavell,
 					name: "Jessica Leavell",
-					title: "Residential Designer"
+					title: "Purchasing Agent/Customer Service"
 				},
 				{
 					image: KristenPetty,
 					name: "Kristen Petty",
-					title: "Residential Designer"
+					title: "Showroom Merchandiser / Customer Service"
 				}
 			],
 			residentialList1: [
@@ -70,13 +71,13 @@ export default class About extends Component {
 				{
 					image: AnnZimmerman,
 					name: "Ann Zimmerman",
-					title: "Masonry Coordinator / Customer Service"
+					title: "Commercial Tile / Customer Service"
 				},
 
 				{
 					image: MaryAnnLucas,
 					name: "Mary Ann Lucas",
-					title: "Masonry Coordinator / Customer Service"
+					title: "Commercial Tile Designer"
 				},
 
 				{
@@ -174,15 +175,15 @@ export default class About extends Component {
 			<section id="team" style={{paddingTop: "200px"}}>
 				<div className="container">
 					<div className="row aboutTeam">
-						<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+						<div className="heading text-center col-sm-9 col-sm-offset-2">
 						<p>We are proud to have evolved from a brick 
 							distributorship in 1967 to a specialty building 
 							materials center specializing in foreign and 
 							domestic materials to complete your space. 
-							With my sister, Kelly, and my daughter, Robyn, 
+							With my sister, Kelly, my daughter, Robyn, 
 							by my side, we are devoted to introducing unique 
 							and innovative materials to our marketplace and 
-							providing our clients, both commercial and 
+							providing our clients, commercial and 
 							residential, the means to achieve their design 
 							solutions and dreams. I am proud of my most 
 							talented staff of designers. They are handpicked 
@@ -204,7 +205,7 @@ export default class About extends Component {
 					<h1>Showroom</h1>
 				</div>
 
-				<div style={{width: '100%', display: 'flex', justifyContent: 'space-around'}}>
+				<div style={{width: '100%',flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around'}}>
 					{this.renderSquares('residentialList')}
 				</div>
 					{this.renderSquares('residentialList1')}
@@ -213,7 +214,7 @@ export default class About extends Component {
 					<h1>Commercial / Masonry</h1>
 				</div>
 				
-				<div style={{width: '100%', display: 'flex', justifyContent: 'space-around'}}>
+				<div style={{width: '100%',flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around'}}>
 					{this.renderSquares('commercialList')}
 				</div>
 					{this.renderSquares('commercialList1')}
