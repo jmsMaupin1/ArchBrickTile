@@ -1,0 +1,47 @@
+[debug] [2017-08-04T00:50:24.535Z] ----------------------------------------------------------------------
+[debug] [2017-08-04T00:50:24.540Z] Command:      /home/jt/.nvm/versions/node/v7.7.1/bin/node /home/jt/Programming/js/client/ABT/node_modules/.bin/firebase deploy
+[debug] [2017-08-04T00:50:24.541Z] CLI Version:  3.9.1
+[debug] [2017-08-04T00:50:24.541Z] Platform:     linux
+[debug] [2017-08-04T00:50:24.541Z] Node Version: v7.7.1
+[debug] [2017-08-04T00:50:24.541Z] Time:         Thu Aug 03 2017 20:50:24 GMT-0400 (EDT)
+[debug] [2017-08-04T00:50:24.541Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-04T00:50:24.589Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-04T00:50:24.589Z] > authorizing via signed-in user
+[debug] [2017-08-04T00:50:24.592Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-08-04T00:50:24.592Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/3rEEJlfS_BITdV5fHS3vrJlUE4skVUWfY0thHkEI1MY2tadZN8ZCRDAvXwep9T3J',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Aug 03 2017 20:50:24 GMT-0400 (EDT)
+[debug] [2017-08-04T00:50:27.596Z] <<< HTTP RESPONSE 400
+[debug] [2017-08-04T00:50:27.597Z] <<< HTTP RESPONSE BODY
+[info] 
+[warn] ⚠  Your CLI authentication needs to be updated to take advantage of new features.
+[warn] ⚠  Please run firebase login --reauth
+[info] 
+[debug] [2017-08-04T00:50:27.603Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-08-04T00:50:27.604Z] > authorizing via signed-in user
+[debug] [2017-08-04T00:50:27.605Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-08-04T00:50:27.605Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/3rEEJlfS_BITdV5fHS3vrJlUE4skVUWfY0thHkEI1MY2tadZN8ZCRDAvXwep9T3J',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Aug 03 2017 20:50:27 GMT-0400 (EDT)
+[debug] [2017-08-04T00:50:28.070Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-04T00:50:29.019Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/archbricktile-a7345  
+ Thu Aug 03 2017 20:50:29 GMT-0400 (EDT)
+[debug] [2017-08-04T00:50:30.291Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-04T00:50:30.292Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/archbricktile-a7345/tokens  
+ Thu Aug 03 2017 20:50:30 GMT-0400 (EDT)
+[debug] [2017-08-04T00:50:31.529Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'archbricktile-a7345'...
+[info] 
+[info] i  deploying database, hosting
+[info] ✔  database: rules ready to deploy.
+[info] i  hosting: preparing ./build directory for upload...
+[debug] [2017-08-04T00:50:37.016Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/archbricktile-a7345/uploads/-KqeiE-26XQ8hewOyulw?fileCount=106&message=  
+ Thu Aug 03 2017 20:50:37 GMT-0400 (EDT)
