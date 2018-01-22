@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './about.css';
 import EmployeeSquare from '../../components/EmployeeSquare';
 import Moose from '../../assets/Moose.jpg';
-import LaurenRiley from '../../assets/team/Lauren-Riley.png';
 import Fam from '../../assets/team/abt-family.jpg';
 import Todd from '../../assets/team/Todd-Howard.jpg';
 import JenniferHobbs from '../../assets/team/Jennifer-Hobbs.jpg';
@@ -22,6 +21,7 @@ import KellyCheslyn from '../../assets/team/Kelly-Cheslyn.png';
 import JacquelinWinter from '../../assets/team/Jacquelin-Winter.png';
 import MaryBethSpaulding from '../../assets/team/Mary-Beth-Spaulding.jpg';
 import RobynLeeman from '../../assets/team/Robyn-Leeman.jpg';
+import MelodyWisely from '../../assets/team/MelodyWisely.jpg';
 
 
 export default class About extends Component {
@@ -62,8 +62,8 @@ export default class About extends Component {
 					title: 'Residential Designer'
 				},
 				{
-					image: LaurenRiley,
-					name: 'Lauren Riley',
+					image: MelodyWisely,
+					name: 'Melody Wisely',
 					title: 'Residential Designer'
 				}
 			],
@@ -81,9 +81,9 @@ export default class About extends Component {
 				},
 
 				{
-					image: JulieKelch,
-					name: "Julie Kelch",
-					title: "Masonry Coordinator / Customer Service"
+					image: TimOwen,
+					name: 'Tim Owen',
+					title: 'Masony & Stone sales'
 				},
 
 			],
@@ -100,54 +100,13 @@ export default class About extends Component {
 					title: 'Masony & Stone sales'
 				},
 
-				{
-					image: TimOwen,
-					name: 'Tim Owen',
-					title: 'Masony & Stone sales'
-				},
+
 
 				{
 					image: MarkSawyer,
 					name: 'Mark Sawyer',
 					title: 'Masony & Stone sales'
 				}
-			],
-			supportList: [
-
-
-
-				{
-					image: RickZirkle,
-					name: "Rick Zirkle",
-					title: "Warehouse Customer Service"
-				},
-				{
-					image: ScottNoel,
-					name: "Scott Noel",
-					title: "Warehouse Customer Service"
-				},
-			],
-			adminstrationList: [
-				{
-					image: JacquelinWinter,
-					name: "Jacquelin Winter",
-					title: "President"
-				},
-				{
-					image: KellyCheslyn,
-					name: "Kelly Cheslyn",
-					title: "Vice President"
-				},
-				{
-					image: RobynLeeman,
-					name: "Robyn Leeman",
-					title: "Controller"
-				},
-				{
-					image: MaryBethSpaulding,
-					name: "Mary Beth Spaulding",
-					title: "Director of Operations"
-				},
 			],
 			showButtonText:"Show More",
 			numberShown: 6
@@ -176,26 +135,26 @@ export default class About extends Component {
 				<div className="container">
 					<div className="row aboutTeam">
 						<div className="heading text-center col-sm-9 col-sm-offset-2">
-						<p>We are proud to have evolved from a brick 
-							distributorship in 1967 to a specialty building 
-							materials center specializing in foreign and 
-							domestic materials to complete your space. 
-							With my sister, Kelly, my daughter, Robyn, 
-							by my side, we are devoted to introducing unique 
-							and innovative materials to our marketplace and 
-							providing our clients, commercial and 
-							residential, the means to achieve their design 
-							solutions and dreams. I am proud of my most 
-							talented staff of designers. They are handpicked 
-							to give you, our cherished partners, the best possible 
-							service and award winning design concepts. My designers 
-							best sales tool is our exceptional showroom. I, personally, 
+						<p>We are proud to have evolved from a brick
+							distributorship in 1967 to a specialty building
+							materials center specializing in foreign and
+							domestic materials to complete your space.
+							With my sister, Kelly, my daughter, Robyn,
+							by my side, we are devoted to introducing unique
+							and innovative materials to our marketplace and
+							providing our clients, commercial and
+							residential, the means to achieve their design
+							solutions and dreams. I am proud of my most
+							talented staff of designers. They are handpicked
+							to give you, our cherished partners, the best possible
+							service and award winning design concepts. My designers
+							best sales tool is our exceptional showroom. I, personally,
 							invite you to be a guest in our showroom located off East
-							106th Street exit from I69 and experience the best that 
-							valuable talent, energy, and education have to offer. 
+							106th Street exit from I69 and experience the best that
+							valuable talent, energy, and education have to offer.
 							<br/><br/>
 							<img src={Fam} />
-							<br /> <br />- Jacquelin Winter<em> President</em> , 
+							<br /> <br />- Jacquelin Winter<em> President</em> ,
 							Architectural Brick and Tile
 						</p>
 					</div>
@@ -213,11 +172,13 @@ export default class About extends Component {
 				<div className="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
 					<h1>Commercial / Masonry</h1>
 				</div>
-				
+
 				<div style={{width: '100%',flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around'}}>
 					{this.renderSquares('commercialList')}
 				</div>
+				<div style={{width: '100%',flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around'}}>
 					{this.renderSquares('commercialList1')}
+				</div>	
 
 				</div>
 			</section>
