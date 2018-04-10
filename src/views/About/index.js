@@ -80,11 +80,6 @@ export default class About extends Component {
 					title: "Commercial Tile Designer"
 				},
 
-				{
-					image: TimOwen,
-					name: 'Tim Owen',
-					title: 'Masony & Stone sales'
-				},
 
 			],
 			commercialList1: [
@@ -103,10 +98,10 @@ export default class About extends Component {
 
 
 				{
-					image: MarkSawyer,
-					name: 'Mark Sawyer',
+					image: TimOwen,
+					name: 'Tim Owen',
 					title: 'Masony & Stone sales'
-				}
+				},
 			],
 			showButtonText:"Show More",
 			numberShown: 6

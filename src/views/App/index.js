@@ -20,7 +20,7 @@ export default class App extends Component {
 	}
 
 	updateScrollTop(e){
-		let top = document.body.scrollTop;
+		let top = window.scrollY;
 		this.setState({
 			scrollTop: top
 		});
