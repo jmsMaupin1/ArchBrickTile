@@ -12,6 +12,13 @@ export default class carousel extends Component {
               return (
                 <Carousel.Item key={index}>
                   <div className="carousel-slide" style={{backgroundImage: 'url('+slide+')'}}>
+                    <div className={this.props.children ? "announcement-container" : "invisible"}>
+                      <div className="announcement">
+                        <div>
+                        {this.props.children}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </Carousel.Item>
               );

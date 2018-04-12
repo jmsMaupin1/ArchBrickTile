@@ -19,11 +19,14 @@ import commercial from '../../assets/commercial.jpg';
 import kitchen from '../../assets/kitchen.jpg';
 import BrickProduct from '../../assets/brick-product.jpg';
 import wood from '../../assets/wood.jpg';
-import styles from './homeStyles.js';
 
 import carousel1 from '../../assets/carousel1.jpg';
 import carousel2 from '../../assets/carousel2.jpg';
 import carousel3 from '../../assets/carousel3.jpg';
+
+import announcementTruck from '../../assets/announcements/foodtruck3rdthursday.png';
+
+import './home.css';
 
 export default class index extends Component {
 	constructor(props){
@@ -37,11 +40,20 @@ export default class index extends Component {
 				<Carousel scrollTo="products" slides={[
 					carousel1,
           carousel2,
-          carousel3
-				]}/>
+          carousel3 ]}>
+          <p className="announcement-header">3rd Thursdays are back</p>
+          <div className="announcement-pic">
+            <img alt="" role="presentation" src={announcementTruck} />
+          </div>
+          <p className="announcement-footer">
+            April 19th * May 17th * Jun 21st
+            <br/>
+            Jul 19th * Aug 16th * Sep 20th
+          </p>
+        </Carousel>
 
 				<ScrollableAnchor id="products">
-			    <div className="text-center container" style={styles.galleryHeader}>
+			    <div className="text-center container galleryheader">
             <div className="col-sm-6">
     					<h2>Product Gallery</h2>
     					<h5>
