@@ -33,8 +33,6 @@ export default class Contact extends Component {
 							</span>
 							 info@archbricktile.com
 						</p>
-
-						<h1>Contact Us Today!</h1>
 					</div>
 				</div>
 				<div className="contact-form">

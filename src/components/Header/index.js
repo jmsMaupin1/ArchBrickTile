@@ -32,7 +32,7 @@ export default class Header extends Component {
 					<div className='navigation-content col-lg-12'>
 							<Link onClick={this.click.bind(this)} className={'col-lg-3 ' + revealed} to="/">Home</Link>
 							<Link onClick={this.click.bind(this)} className={'col-lg-3 ' + revealed} to="/about">About</Link>
-							<Link onClick={this.click.bind(this)} className={'col-lg-3 ' + revealed} to="/"><img alt="ABT Logo" className="logo" src={ABTIcon}></img></Link>
+							<Link onClick={this.click.bind(this)} className={'abt-logo col-lg-3 ' + revealed} to="/"><img alt="ABT Logo" className="logo" src={ABTIcon}></img></Link>
 							<Link onClick={this.click.bind(this)} className={'col-lg-3 ' + revealed} to="/suppliers">Suppliers</Link>
 							<Link onClick={this.click.bind(this)} className={'col-lg-3 ' + revealed} to="/contact">Contact Us</Link>
 						<button className="nav-button" onClick={this.handleClick.bind(this)}><i className="fa fa-bars"/></button>
@@ -42,11 +42,3 @@ export default class Header extends Component {
 		);
 	}
 }
-
-
-// <span style={{
-// 							color: "white",
-// 							font: "100px",
-// 							paddingLeft: "20px",
-// 							paddingTop: "20px",
-// 						}}>(317) 842-2888</span>

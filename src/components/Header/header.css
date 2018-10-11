@@ -28,6 +28,9 @@
 }
 /*Non-Desktops*/
 @media only screen and (max-width: 1223px) {
+	.abt-logo {
+		display: none!important;
+	}
 	.revealed {
 		line-height: 2px;
 		padding: 40px;

@@ -87,7 +87,7 @@ export default class Suppliers extends Component {
 				{
 					image:IRISCeramic,
                     title:"IRIS Ceramica",
-					link: "http://www.irisceramica.com",
+					link: "http://www.irisus.com/collections/",
 				},
 				{
 					image:IslandStone,
@@ -147,7 +147,7 @@ export default class Suppliers extends Component {
 				{
 					image:Provenza,
                     title:"Provenza Hardwoods",
-					link: "http://www.ceramicheprovenza.com/index.html#/home",
+					link: "https://www.provenzafloors.com/Hardwood.aspx",
 				},
 				{
 					image:Realstone,

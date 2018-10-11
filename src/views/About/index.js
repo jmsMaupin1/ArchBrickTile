@@ -7,9 +7,9 @@ import Todd from '../../assets/team/Todd-Howard.jpg';
 import JenniferHobbs from '../../assets/team/Jennifer-Hobbs.jpg';
 import WendyRichmond from '../../assets/team/Wendy-Richmond.jpg';
 import JoanneHolman from '../../assets/team/Joanne-Holman.jpg';
-import MaryAnnLucas from '../../assets/team/Mary-Ann-Lucas.jpg';
+import ShannonRoark from '../../assets/team/Shannon.png';
 import AnnZimmerman from '../../assets/team/Ann-Zimmerman.jpg';
-import TimOwen from '../../assets/team/Tim-Owen-test.jpg';
+import TimOwen from '../../assets/team/Tim-Owen.jpg';
 import PeterKerfoot from '../../assets/team/Pete-Kerfoot.jpg';
 import MarkSawyer from '../../assets/team/Mark-Sawyer.jpg';
 import JessicaLeavell from '../../assets/team/Jessica-Leavell.jpg';
@@ -75,9 +75,9 @@ export default class About extends Component {
 				},
 
 				{
-					image: MaryAnnLucas,
-					name: "Mary Ann Lucas",
-					title: "Commercial Tile Designer"
+					image: ShannonRoark,
+					name: "Shannon Roark",
+					title: "Commercial Design"
 				},
 
 

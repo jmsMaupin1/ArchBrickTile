@@ -21,11 +21,6 @@
 	justify-content: center;
 }
 
-.announcement > div {
-	padding: 50px;
-	background-color: rgba(255, 255, 255, .8);
-}
-
 @media only screen  and (min-width : 1224px) {
   .carousel-logo {
   	display: inline-block;

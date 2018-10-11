@@ -24,7 +24,11 @@ import carousel1 from '../../assets/carousel1.jpg';
 import carousel2 from '../../assets/carousel2.jpg';
 import carousel3 from '../../assets/carousel3.jpg';
 
-import announcementTruck from '../../assets/announcements/foodtruck3rdthursday.png';
+import thirdThursday from '../../assets/announcements/thirdThursday.JPG';
+import memorialday from '../../assets/announcements/memorialDayAnnouncement.png';
+import fourthOfJuly from '../../assets/announcements/fourthOfJuly.JPG';
+import ellasaid from '../../assets/announcements/ellasaid.png';
+import augthirdthurs from '../../assets/announcements/augthirdthurs.JPG';
 
 import './home.css';
 
@@ -41,15 +45,9 @@ export default class index extends Component {
 					carousel1,
           carousel2,
           carousel3 ]}>
-          <p className="announcement-header">3rd Thursdays are back</p>
           <div className="announcement-pic">
-            <img alt="" role="presentation" src={announcementTruck} />
+            {/*<img className="col-lg-12 col-lg-offset-0" alt="" role="presentation" src={augthirdthurs} />*/}
           </div>
-          <p className="announcement-footer">
-            April 19th * May 17th * Jun 21st
-            <br/>
-            Jul 19th * Aug 16th * Sep 20th
-          </p>
         </Carousel>
 
 				<ScrollableAnchor id="products">
@@ -66,7 +64,10 @@ export default class index extends Component {
                 Monday – Friday 8:00 – 5:00 <br />
                 Thursday Eve until 7:00 <br />
                 Saturday 10:00 – 3:00 <br />
-                Warehouse Monday – Friday 7:30 – 4:30
+              </h4>
+              <h3>Warehouse Hours:</h3>
+              <h4>
+                Monday – Friday 7:30 – 4:30
               </h4>
             </div>
           </div>
