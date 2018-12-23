@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Modal from '../../components/Modal';
 import './App.css';
 
 export default class App extends Component {

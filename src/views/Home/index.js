@@ -4,6 +4,7 @@ import ProductSquare from '../../components/ProductSquare';
 import AboutParallax from '../../components/AboutParallax';
 import SocialMedia from '../../components/SocialMedia';
 import Certifications from '../../components/Certifications';
+import Modal from '../../components/Modal';
 import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
 
 import Moose from '../../assets/Moose.jpg';
@@ -29,6 +30,7 @@ import memorialday from '../../assets/announcements/memorialDayAnnouncement.png'
 import fourthOfJuly from '../../assets/announcements/fourthOfJuly.JPG';
 import ellasaid from '../../assets/announcements/ellasaid.png';
 import augthirdthurs from '../../assets/announcements/augthirdthurs.JPG';
+import decemberAnnouncement from '../../assets/announcements/December.JPG';
 
 import './home.css';
 
@@ -41,6 +43,9 @@ export default class index extends Component {
 	render() {
 		return (
 			<div>
+        <Modal>
+          <img className="" alt="" role="presentation" src={decemberAnnouncement} />
+        </Modal>
 				<Carousel scrollTo="products" slides={[
 					carousel1,
           carousel2,
