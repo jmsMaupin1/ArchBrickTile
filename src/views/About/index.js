@@ -11,16 +11,8 @@ import ShannonRoark from '../../assets/team/Shannon.png';
 import AnnZimmerman from '../../assets/team/Ann-Zimmerman.jpg';
 import TimOwen from '../../assets/team/Tim-Owen.jpg';
 import PeterKerfoot from '../../assets/team/Pete-Kerfoot.jpg';
-import MarkSawyer from '../../assets/team/Mark-Sawyer.jpg';
 import JessicaLeavell from '../../assets/team/Jessica-Leavell.jpg';
-import JulieKelch from '../../assets/team/Julie-Kelch.jpeg';
 import KristenPetty from '../../assets/team/Kristen-Petty.jpg';
-import RickZirkle from '../../assets/team/Rick-Zirkle.jpg';
-import ScottNoel from '../../assets/team/Scott-Noel.jpg';
-import KellyCheslyn from '../../assets/team/Kelly-Cheslyn.png';
-import JacquelinWinter from '../../assets/team/Jacquelin-Winter.png';
-import MaryBethSpaulding from '../../assets/team/Mary-Beth-Spaulding.jpg';
-import RobynLeeman from '../../assets/team/Robyn-Leeman.jpg';
 import MelodyWisely from '../../assets/team/MelodyWisely.jpg';
 
 
@@ -148,7 +140,7 @@ export default class About extends Component {
 							106th Street exit from I69 and experience the best that
 							valuable talent, energy, and education have to offer.
 							<br/><br/>
-							<img src={Fam} />
+							<img alt="" src={Fam} />
 							<br /> <br />- Jacquelin Winter<em> President</em> ,
 							Architectural Brick and Tile
 						</p>

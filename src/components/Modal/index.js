@@ -24,7 +24,7 @@ export default class index extends Component {
 
   render() {
     return (
-      <div style={{display: this.state.display}} className="modal-wrapper" onClick={this.changeDisplay}>
+      <div style={{display: this.props.hide ? 'none' : this.state.display}} className="modal-wrapper" onClick={this.changeDisplay}>
         <div className="modal-content" onClick={this.handleClick}>
             {this.props.children}
         </div>     

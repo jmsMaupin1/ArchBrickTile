@@ -20,7 +20,8 @@ export default class Header extends Component {
 	}
 
 	click(e){
-		let nav = $('.nav-button').click();
+		let nav = $('.nav-button');
+		nav.click();
 	}
 
 	render() {

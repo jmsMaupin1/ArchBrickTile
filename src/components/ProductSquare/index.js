@@ -6,7 +6,8 @@ var style = {
 		padding: 0,
         position: 'relative', 
         border: '1px solid black', 
-        maxHeight: 350, 
+        height: 350,
+        width: 350,
         overflow: 'hidden'
 	},
 
